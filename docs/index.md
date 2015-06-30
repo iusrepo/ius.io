@@ -4,26 +4,29 @@
 
 ## About
 
-IUS is a third party repository that provides RPM packages for newer versions of select software for
-Enterprise Linux distributions.
+IUS is a community project that provides RPM packages for newer versions of
+select software for Enterprise Linux distributions.
 
 ## Project Goals
 
-* Create high quality RPM packages for Red Hat Enterprise Linux (RHEL) and CentOS.
-* Promptly release updated RPM packages once new versions are released by the upstream developers.
+* Create high quality RPM packages for Red Hat® Enterprise Linux (RHEL) and
+  CentOS.
+* Promptly release updated RPM packages once new versions are released by the
+  upstream developers.
 * No automatic replacement of stock RPM packages.
 
 ## Available Packages
 
-We typically package the latest stable versions of PHP, Python, MySQL, and MariaDB.  More info can
-be found [here][1].
+We typically package the latest stable versions of PHP, Python, MySQL, and
+more.  A complete list can be found [here][1].
 
 ## Contact Us
 
-Most of our development is done in [GitHub][2], so that is the best way to reach us.  Problems with
-a specific package should be reported as issues in the appropriate repository under the
-[iuscommunity-pkg][3] organization.  Several other repositories exist under the [iuscommunity][4]
-organization for various other things, such as [this website][5] or our [new package wishlist][6].
+Most of our development is done in [GitHub][2], so that is the best way to
+reach us.  Problems with a specific package should be reported as issues in the
+appropriate repository under the [iuscommunity-pkg][3] organization.  Several
+other repositories exist under the [iuscommunity][4] organization for various
+other things, such as [this website][5] or our [new package wishlist][6].
 
 Other contact methods:
 
