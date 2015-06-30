@@ -1,12 +1,15 @@
+<a name="ius_project"></a>
 # IUS Project
 
 #### _**I**nline with **U**pstream **S**table_
 
+<a name="about"></a>
 ## About
 
 IUS is a community project that provides RPM packages for newer versions of
 select software for Enterprise Linux distributions.
 
+<a name="project_goals"></a>
 ## Project Goals
 
 * Create high quality RPM packages for Red Hat® Enterprise Linux (RHEL) and
@@ -15,11 +18,13 @@ select software for Enterprise Linux distributions.
   upstream developers.
 * No automatic replacement of stock RPM packages.
 
+<a name="available_packages"></a>
 ## Available Packages
 
 We typically package the latest stable versions of PHP, Python, MySQL, and
 more.  A complete list can be found [here][1].
 
+<a name="contact_us"></a>
 ## Contact Us
 
 Most of our development is done in [GitHub][2], so that is the best way to
