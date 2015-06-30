@@ -3,3 +3,4 @@ repo_url: https://github.com/iuscommunity
 pages:
   - About: index.md
   - Packages: packages.md
+  - Contributing: contributing.md
