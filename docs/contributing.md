@@ -22,8 +22,8 @@ repository and installing/updating from there.  We also recommend configuring
 automatic nightly updates so that new updates are applied as soon as possible.
 If you see an issue with a testing package, let us know as soon as you can; if
 notified soon enough we can fix the issue before the update is pushed to the
-stable repositories and affects more users.  Please see our [update cycle][1]
-policy for more information about how long packages stay in each repository.
+stable repositories and affects more users.  Please see our [release policy][1]
+for more information about how long packages stay in each repository.
 
 <a name="spread_the_word"></a>
 ## Spread the Word
@@ -57,6 +57,6 @@ build both IUS packages and also private packages for Rackspace.  We plan to
 eventually deploy a publicly accessible build system to allow trusted community
 members to build IUS packages.
 
-[1]: philosophy.md#update_cycle
+[1]: philosophy.md#release_policy
 [2]: https://github.com/iuscommunity-pkg
 [3]: https://github.com/iuscommunity/wishlist
