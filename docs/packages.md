@@ -1,7 +1,7 @@
 # Packages
 
-Rather than maintain a list of available packages by hand, we use the fantastic [repoview][1] tool
-to do it for us.
+Rather than maintain a list of available packages by hand, we use the fantastic
+[repoview][1] tool to do it for us.
 
 * [RHEL 5][2]
 * [RHEL 6][3]
