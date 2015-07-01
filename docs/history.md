@@ -1,4 +1,3 @@
-<a name="history"></a>
 # History
 
 The IUS Project started as an internal experiment at [Rackspace][1] in 2006.

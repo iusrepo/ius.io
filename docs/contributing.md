@@ -1,7 +1,5 @@
-<a name="contributing_to_ius"></a>
 # Contributing to IUS
 
-<a name="package_feedback"></a>
 ## Package Feedback
 
 The most important way to contribute is to provide feedback on our packages.
@@ -13,7 +11,6 @@ fix added to the upstream source code whenever possible.  Upstream developers
 value the feedback we help generate by enabling users of Enterprise Linux to
 use the latest versions of their software.
 
-<a name="early_testing"></a>
 ## Early Testing
 
 The testing repository is added as part of the ius-release package, but is
@@ -25,7 +22,6 @@ notified soon enough we can fix the issue before the update is pushed to the
 stable repositories and affects more users.  Please see our [release policy][1]
 for more information about how long packages stay in each repository.
 
-<a name="spread_the_word"></a>
 ## Spread the Word
 
 There are many forums and blog posts around that internet describing various
@@ -44,7 +40,6 @@ identity of our community by discussing IUS in IRC channels, LUG meetings, or
 conferences.  Recommending us to your friends and coleagues is another great
 way to help.
 
-<a name="rpm_packaging"></a>
 ## RPM Packaging
 
 Users can participate in the development of our RPM packages by sending us pull

@@ -1,5 +1,8 @@
 site_name: IUS Project
 repo_url: https://github.com/iuscommunity
+markdown_extensions:
+  - toc:
+      permalink: True
 pages:
   - About: index.md
   - Packages: packages.md
