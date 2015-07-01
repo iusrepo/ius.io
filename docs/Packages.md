@@ -6,22 +6,17 @@ Rather than maintain a list of available packages by hand, we use the fantastic
 * [RHEL 5 SRPMS][2]
 * [RHEL 5 i386][3]
 * [RHEL 5 x86_64][4]
-
 * [RHEL 6 SRPMS][5]
 * [RHEL 6 i386][6]
 * [RHEL 6 x86_64][7]
-
 * [RHEL 7 SRPMS][8]
 * [RHEL 7 x86_64][9]
-
 * [CentOS 5 SRPMS][10]
 * [CentOS 5 i386][11]
 * [CentOS 5 x86_64][12]
-
 * [CentOS 6 SRPMS][13]
 * [CentOS 6 i386][14]
 * [CentOS 6 x86_64][15]
-
 * [CentOS 7 SRPMS][16]
 * [CentOS 7 x86_64][17]
 
