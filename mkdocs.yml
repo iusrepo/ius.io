@@ -7,6 +7,7 @@ markdown_extensions:
 pages:
   - index.md
   - Usage:
+    - Getting_Started.md
     - Packages.md
   - More Information:
     - Contributing.md
