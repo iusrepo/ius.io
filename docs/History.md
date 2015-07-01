@@ -25,5 +25,5 @@ packages are not covered by any service level agreements.  For more details,
 please read our [End User Agreement][3].
 
 [1]: https://www.rackspace.com
-[2]: saferepo.md
+[2]: SafeRepo.md
 [3]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA

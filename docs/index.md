@@ -34,7 +34,7 @@ Other contact methods:
 * [general mailing list][8]
 * [development mailing list][9]
 
-[1]: packages.md
+[1]: Packages.md
 [2]: https://github.com
 [3]: https://github.com/iuscommunity-pkg
 [4]: https://github.com/iuscommunity
