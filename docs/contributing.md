@@ -52,6 +52,6 @@ build both IUS packages and also private packages for Rackspace.  We plan to
 eventually deploy a publicly accessible build system to allow trusted community
 members to build IUS packages.
 
-[1]: philosophy.md#release_policy
+[1]: philosophy.md#release-policy
 [2]: https://github.com/iuscommunity-pkg
 [3]: https://github.com/iuscommunity/wishlist
