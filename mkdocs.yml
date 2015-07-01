@@ -5,7 +5,9 @@ markdown_extensions:
   - toc:
       permalink: True
 pages:
-  - About: index.md
-  - Packages: packages.md
-  - Contributing: contributing.md
-  - History: history.md
+  - index.md
+  - Usage:
+    - Packages.md
+  - More Information:
+    - Contributing.md
+    - History.md
