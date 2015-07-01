@@ -1,4 +1,4 @@
-# Packages
+# Available Packages
 
 Rather than maintain a list of available packages by hand, we use the fantastic
 [repoview][1] tool to do it for us.
