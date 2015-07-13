@@ -68,4 +68,3 @@ links to get the correct release package.
 [11]: https://centos5.iuscommunity.org/ius-release.rpm
 [12]: https://centos6.iuscommunity.org/ius-release.rpm
 [13]: https://centos7.iuscommunity.org/ius-release.rpm
-
