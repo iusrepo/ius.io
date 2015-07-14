@@ -56,7 +56,7 @@ links to get the correct release package.
 * [https://centos7.iuscommunity.org/ius-release.rpm][13]
 
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
-[2]: Usage_Guide.md
+[2]: UsageGuide.md
 [3]: http://setup.ius.io
 [4]: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
 [5]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
