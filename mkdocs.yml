@@ -8,9 +8,9 @@ pages:
   - index.md
   - About:
     - Philosophy.md
+    - History.md
   - Usage:
     - GettingStarted.md
     - Packages.md
   - More Information:
     - Contributing.md
-    - History.md
