@@ -6,6 +6,8 @@ markdown_extensions:
       permalink: True
 pages:
   - index.md
+  - About:
+    - Philosophy.md
   - Usage:
     - GettingStarted.md
     - Packages.md
