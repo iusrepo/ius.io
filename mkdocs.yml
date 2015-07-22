@@ -9,6 +9,7 @@ pages:
   - About:
     - Philosophy: Philosophy.md
     - History: History.md
+    - Packages: Packages.md
   - Usage:
     - Getting Started: GettingStarted.md
     - Usage Guide: UsageGuide.md
