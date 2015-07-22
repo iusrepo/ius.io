@@ -10,6 +10,7 @@ pages:
     - Philosophy: Philosophy.md
     - History: History.md
     - Packages: Packages.md
+    - SafeRepo: SafeRepo.md
   - Usage:
     - Getting Started: GettingStarted.md
     - Usage Guide: UsageGuide.md
