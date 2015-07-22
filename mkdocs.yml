@@ -7,10 +7,10 @@ markdown_extensions:
 pages:
   - index.md
   - About:
-    - Philosophy.md
-    - History.md
+    - Philosophy: Philosophy.md
+    - History: History.md
   - Usage:
-    - GettingStarted.md
-    - Packages.md
+    - Getting Started: GettingStarted.md
+    - Usage Guide: UsageGuide.md
   - More Information:
-    - Contributing.md
+    - Contributing: Contributing.md
