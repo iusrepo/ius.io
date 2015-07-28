@@ -67,19 +67,23 @@ Nicole Rodgers - Vice President of Operations, Technology Marketing Toolkit, Inc
 > $5,000 per year from system administration over to application development.
 
 ## Media
+### Jupiter Broadcasting
 
-[Jupiter Broadcasting's Linux Action Show s18e05][1] 31:30 - 32:27
+[Linux Action Show s18e05][1] 31:30 - 32:27
+
 [![LAS s18e05](https://img.youtube.com/vi/jSBejChBFzg/0.jpg)](https://www.youtube.com/watch?v=jSBejChBFzg#t=31m30s)
 
-[Jupiter Broadcasting's TechSNAP 120][2] 52:11 - 53:30
+[TechSNAP 120][2] 52:11 - 53:30
+
 [![TechSNAP 120](https://img.youtube.com/vi/p_mUORAwPz0/0.jpg)](https://www.youtube.com/watch?v=p_mUORAwPz0#t=52m11s)
 
-[Jupiter Broadcasting's TechSNAP 125][3] 14:31-17-13
+[TechSNAP 125][3] 14:31-17-13
+
 [![TechSNAP 125](https://img.youtube.com/vi/I-UVKLb8uys/0.jpg)](https://www.youtube.com/watch?v=I-UVKLb8uys#t=14m31s)
 
-[Jupiter Broadcasting's Linux Action Show 327][4] 40:24 - 44:34
-[![LAS 327](https://img.youtube.com/vi/id8j7uctnGo/0.jpg)](https://www.youtube.com/watch?v=id8j7uctnGo#t=40m24s)
+[Linux Action Show 327][4] 40:24 - 44:34
 
+[![LAS 327](https://img.youtube.com/vi/id8j7uctnGo/0.jpg)](https://www.youtube.com/watch?v=id8j7uctnGo#t=40m24s)
 
 [1]: http://www.jupiterbroadcasting.com/11726/mandriva-2011-review-las-s18e05/
 [2]: http://www.jupiterbroadcasting.com/40802/ethically-hacked-techsnap-120/
