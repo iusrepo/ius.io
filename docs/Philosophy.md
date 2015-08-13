@@ -90,9 +90,9 @@ suffix to all our new packages to keep from getting in the same situation
 again.
 
 [1]: https://access.redhat.com/security/updates/backporting
-[2]: Contributing.md#early_testing
-[3]: SafeRepo.md#safe_replacement_package
-[4]: SafeRepo.md#parallel_installable_package
+[2]: Contributing.md#early-testing
+[3]: SafeRepo.md#safe-replacement-package
+[4]: SafeRepo.md#parallel-installable-package
 [5]: https://dl.iuscommunity.org/pub/ius/testing/
 [6]: https://dl.iuscommunity.org/pub/ius/stable/
 [7]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html-single/5.6_Release_Notes/#idp12335856
