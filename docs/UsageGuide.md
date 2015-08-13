@@ -516,8 +516,8 @@ stock version of yum in RHEL 5.5/6.0::
 
 [0]: FAQs.md
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
-[2]: SafeRepo.md#safe_replacement_package
-[3]: SafeRepo.md#parallel_installable_package
+[2]: SafeRepo.md#safe-replacement-package
+[3]: SafeRepo.md#parallel-installable-package
 [4]: GettingStarted.md
 [5]: https://dl.iuscommunity.org/pub/ius
 [6]: https://bugs.launchpad.net/ius/+bug/453543
