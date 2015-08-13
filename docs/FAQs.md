@@ -10,6 +10,7 @@ Q: What is the IUS community project?
 Q: What is it NOT?
 
 Q: What does IUS stand for?
+A: **I**nline with **U**pstream **S**table
 
 Q: What is the history of the IUS community project?
 
