@@ -13,6 +13,7 @@ Q: What does IUS stand for?
 A: **I**nline with **U**pstream **S**table
 
 Q: What is the history of the IUS community project?
+A: See our [history page][0].
 
 Q: Why can’t I just do a ‘yum upgrade’ and update my RPMs?
 
