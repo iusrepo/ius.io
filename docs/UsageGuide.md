@@ -40,80 +40,25 @@ IUS packages will be one of two different types.
 
 Configuration steps can be found in our [getting started guide][4].
 
-## See What Packages Are Available
+## View Available Packages
 
-You can easily see what software is available to you by doing a 'yum search'
-or by going to the [IUS Community Repo][5] directly. Keep in mind that packages will
-be added to IUS regularly so check back often::
+Once the IUS repository is enabled, you can use one of these commands to list
+all packages in the repository.
 
-    [root@el5-i386 ~]# yum list | grep -w \.ius\.
-             
-    mod_python26-debuginfo.i386            3.3.1-10.ius.el5       ius-testing       
-    mysql50.i386                           5.0.83-2.ius.el5       ius-testing       
-    mysql50-bench.i386                     5.0.83-2.ius.el5       ius-testing       
-    mysql50-debuginfo.i386                 5.0.83-2.ius.el5       ius-testing       
-    mysql50-devel.i386                     5.0.83-2.ius.el5       ius-testing       
-    mysql50-server.i386                    5.0.83-2.ius.el5       ius-testing       
-    mysql51.i386                           5.1.36-2.ius.el5       ius-testing       
-    mysql51-bench.i386                     5.1.36-2.ius.el5       ius-testing       
-    mysql51-debuginfo.i386                 5.1.36-2.ius.el5       ius-testing       
-    mysql51-devel.i386                     5.1.36-2.ius.el5       ius-testing       
-    mysql51-plugins-archive.i386           5.1.36-2.ius.el5       ius-testing       
-    mysql51-plugins-blackhole.i386         5.1.36-2.ius.el5       ius-testing       
-    mysql51-plugins-example.i386           5.1.36-2.ius.el5       ius-testing       
-    mysql51-plugins-federated.i386         5.1.36-2.ius.el5       ius-testing       
-    mysql51-server.i386                    5.1.36-2.ius.el5       ius-testing       
-    php52.i386                             5.2.10-1.2.ius.el5     ius-testing         
-    php52-cli.i386                         5.2.10-1.2.ius.el5     ius-testing
-    php52-common.i386                      5.2.10-1.2.ius.el5     ius-testing         
-    php52-gd.i386                          5.2.10-1.2.ius.el5     ius-testing       
-    php52-imap.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-ldap.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-mbstring.i386                    5.2.10-1.2.ius.el5     ius-testing       
-    php52-mysql.i386                       5.2.10-1.2.ius.el5     ius-testing       
-    php52-odbc.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-pdo.i386                         5.2.10-1.2.ius.el5     ius-testing       
-    php52-xml.i386                         5.2.10-1.2.ius.el5     ius-testing
-    php52-bcmath.i386                      5.2.10-1.2.ius.el5     ius-testing       
-    php52-dba.i386                         5.2.10-1.2.ius.el5     ius-testing       
-    php52-debuginfo.i386                   5.2.10-1.2.ius.el5     ius-testing       
-    php52-devel.i386                       5.2.10-1.2.ius.el5     ius-testing       
-    php52-mcrypt.i386                      5.2.10-1.2.ius.el5     ius-testing       
-    php52-mssql.i386                       5.2.10-1.2.ius.el5     ius-testing       
-    php52-ncurses.i386                     5.2.10-1.2.ius.el5     ius-testing       
-    php52-pgsql.i386                       5.2.10-1.2.ius.el5     ius-testing       
-    php52-snmp.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-soap.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-tidy.i386                        5.2.10-1.2.ius.el5     ius-testing       
-    php52-xmlrpc.i386                      5.2.10-1.2.ius.el5     ius-testing       
-    php53.i386                             5.3.0-1.ius.el5        ius-testing       
-    php53-bcmath.i386                      5.3.0-1.ius.el5        ius-testing       
-    php53-cli.i386                         5.3.0-1.ius.el5        ius-testing       
-    php53-common.i386                      5.3.0-1.ius.el5        ius-testing       
-    php53-dba.i386                         5.3.0-1.ius.el5        ius-testing       
-    php53-debuginfo.i386                   5.3.0-1.ius.el5        ius-testing       
-    php53-devel.i386                       5.3.0-1.ius.el5        ius-testing       
-    php53-gd.i386                          5.3.0-1.ius.el5        ius-testing       
-    php53-imap.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-ldap.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-mbstring.i386                    5.3.0-1.ius.el5        ius-testing       
-    php53-mcrypt.i386                      5.3.0-1.ius.el5        ius-testing       
-    php53-mssql.i386                       5.3.0-1.ius.el5        ius-testing       
-    php53-mysql.i386                       5.3.0-1.ius.el5        ius-testing       
-    php53-odbc.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-pdo.i386                         5.3.0-1.ius.el5        ius-testing       
-    php53-pgsql.i386                       5.3.0-1.ius.el5        ius-testing       
-    php53-snmp.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-soap.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-tidy.i386                        5.3.0-1.ius.el5        ius-testing       
-    php53-xml.i386                         5.3.0-1.ius.el5        ius-testing       
-    php53-xmlrpc.i386                      5.3.0-1.ius.el5        ius-testing    
-    python26-debuginfo.i386                2.6-4.5.ius.el5        ius-testing
-    python26-devel.i386                    2.6-4.5.ius.el5        ius-testing
-    python26-libs.i386                     2.6-4.5.ius.el5        ius-testing
-    python26-setuptools.noarch             0.6c9-1.1.ius.el5      ius-testing
-    python26-test.i386                     2.6-4.5.ius.el5        ius-testing
-    python26-tools.i386                    2.6-4.5.ius.el5        ius-testing
+```bash
+# EL5/6
+yum --disablerepo=* --enablerepo=ius list available
+# EL7
+yum repository-packages ius list available
+# future
+dnf repository-packages ius list available
+```
+
+You can view the packages in the testing, development, or archive repositories
+by using the corresponding repoid, such as "ius-testing".
+
+You can also look through our [repoview directories][5] in a web browser.
+
 
 ## Upgrading Stock RHEL Packages to IUS Packages
 
@@ -519,7 +464,7 @@ stock version of yum in RHEL 5.5/6.0::
 [2]: SafeRepo.md#safe-replacement-package
 [3]: SafeRepo.md#parallel-installable-package
 [4]: GettingStarted.md
-[5]: https://dl.iuscommunity.org/pub/ius
+[5]: Packages.md
 [6]: https://bugs.launchpad.net/ius/+bug/453543
 [7]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
 [8]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
