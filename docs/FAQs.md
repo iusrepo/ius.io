@@ -64,4 +64,16 @@ Q: Can IUS be used with DNF?
 
 Q: What happened to LaunchPad?
 
+Q: What is the relationship between Rackspace and IUS?
+A: It is similar to the relationship between Red Hat® and EPEL.
+
+* $COMPANY sponsors $PROJECT.
+* $COMPANY employees work on $PROJECT.
+* $COMPANY support is very familiar with packages from $PROJECT (possibly even
+  to the point where the packages could be mistaken as supported).
+* The escalation path for $PROJECT packages is with $PROJECT, not with $COMPANY.
+* No $COMPANY service level agreements apply to packages from $PROJECT.
+* Using $PROJECT packages does not automatically void $COMPANY SLA.
+
+
 [0]: History.md
