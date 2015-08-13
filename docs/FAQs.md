@@ -75,5 +75,9 @@ A: It is similar to the relationship between Red Hat® and EPEL.
 * No $COMPANY service level agreements apply to packages from $PROJECT.
 * Using $PROJECT packages does not automatically void $COMPANY SLA.
 
+Q: How can I be notified when an IUS package I am using reaches EOL (end of life) status?
+A: We post to our [public mailing list][1] when a package has reached EOL status.
+
 
 [0]: History.md
+[1]: https://launchpad.net/~ius-community
