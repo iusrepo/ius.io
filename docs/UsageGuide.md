@@ -1,4 +1,4 @@
-# IUS Client Usage Guide
+# Usage Guide
 
 ## Summary
 
