@@ -59,343 +59,47 @@ by using the corresponding repoid, such as "ius-testing".
 
 You can also look through our [repoview directories][5] in a web browser.
 
+## Installing IUS Packages
 
-## Upgrading Stock RHEL Packages to IUS Packages
+There are multiple ways to install IUS packages.  The best method will depend
+on the type of package and whether or not the stock equivalent is already
+installed.
 
-The IUS repository has a package called 'yum-plugin-replace'. This package is
-*not* required by the 'ius-release' package, but can be installed via::
+### Safe Replacement Packages
 
-    $ sudo yum install yum-plugin-replace
+[Safe replacement packages][2] completely replace their stock equivalents, and
+cannot be installed at the same time.  If the stock equivalent of an IUS
+package is not already installed, then you can just directly install the
+desired package.
 
-The replace plugin was written specifically for IUS to assist in upgrading from
-stock packages to IUS packageXY style packages.
+<script type="text/javascript" src="https://asciinema.org/a/24585.js" id="asciicast-24585" async></script>
 
-If for some reason these processes and the yum-plugin-replace do not work
-correctly, you can also try :ref:`UpgradingTheOldWay`.
+If the stock/EPEL equvalent of an IUS package is already installed, you must
+uninstall it first.  If other packages depend on your installed stock package,
+you may need to perform the removal and installation in a single transaction.
+The native yum way to do this is via [yum shell][7].
 
-Using 'php' as an example, we are going to show how to upgrade from stock RHEL
-packages to the IUS counterparts::
+<script type="text/javascript" src="https://asciinema.org/a/24507.js" id="asciicast-24507" async></script>
 
-    [root@linuxbox ~]# rpm -qa | grep php
-    php-pear-1.4.9-6.el5
-    php-common-5.1.6-27.el5
-    php-cli-5.1.6-27.el5
-    php-devel-5.1.6-27.el5
-    php-5.1.6-27.el5
-    
-    [root@linuxbox ~]# yum replace php --replace-with php53
-    Loaded plugins: replace
-    Excluding Packages in global exclude list
-    Finished
-    Replacing packages takes time, please be patient...
-    
-    WARNING: Unable to resolve all providers: ['config(php-common)', 'dbase.so()(64bit)', 'php-dbase', 'php-mime_magic', 'php-pcntl']
-    
-    This may be normal depending on the package.  Continue? [y/N] y
-    
-    Removed:
-      php.x86_64 0:5.1.6-27.el5        php-cli.x86_64 0:5.1.6-27.el5  php-common.x86_64 0:5.1.6-27.el5 
-      php-devel.x86_64 0:5.1.6-27.el5  php-pear.noarch 1:1.4.9-6.el5 
-    
-    Installed:
-      php53.x86_64 0:5.3.2-6.ius.el5                   php53-cli.x86_64 0:5.3.2-6.ius.el5              
-      php53-common.x86_64 0:5.3.2-6.ius.el5            php53-devel.x86_64 0:5.3.2-6.ius.el5            
-      php53-pear.noarch 1:1.8.1-4.ius.el5              php53-pspell.x86_64 0:5.3.2-6.ius.el5           
-    
-    Complete!
+IUS also maintains the [yum replace plugin][6] to simplify the process.
 
-As you can see there is a WARNING that the 'replace' operation was unable to
-resolve all providers. This means that the 'php53' package doesn't provide
-everything that the 'php' packages did. This is normal, and should be expected
-when upgrading major versions of software. At times this will also be because of
-something missing in the newer packages. For example, dbase was removed from
-php53 core ... however 'config(php-common)' should likely be added to the php53
-packages and is simply just an rpm spec change that needs to happen. The
-yum-plugin-replace is new, and therefore small issues like this will be resolved
-in the near future as they are discovered.
+<script type="text/javascript" src="https://asciinema.org/a/24503.js" id="asciicast-24503" async></script>
 
-You will notice that the 'replace' plugin determines all the required sub
-packages that are required to resolve the deps provided by the stock versions
-package set. Additionally, the plugin will attempt to install any external
-packages that might need to be replaced as well. For example, the 'php-pear'
-package is not part of the 'php' package set. Therefore, it needs to be replaced
-by 'php53-pear' ... another example would be with any PECL sub packages that
-might be installed (assuming the php53-pecl-xxxxxx package is available in IUS).
+There is another option in the new [dnf][8] package manager.  The flag
+`--allowerasing` allows you erase conflicting packages in the same transaction.
 
-The following is the full output from the command::
+_Note: Dnf is not yet available in base RHEL, but has been backported to EPEL 7._
 
-    [root@linuxbox ~]# yum replace php --replace-with php53
-    Loaded plugins: replace
-    Excluding Packages in global exclude list
-    Finished
-    Replacing packages takes time, please be patient...
-    
-    WARNING: Unable to resolve all providers: ['config(php-common)', 'dbase.so()(64bit)', 'php-dbase', 'php-mime_magic', 'php-pcntl']
-    
-    This may be normal depending on the package.  Continue? [y/N] y
-    Resolving Dependencies
-    --> Running transaction check
-    ---> Package php.x86_64 0:5.1.6-27.el5 set to be erased
-    ---> Package php-cli.x86_64 0:5.1.6-27.el5 set to be erased
-    ---> Package php-common.x86_64 0:5.1.6-27.el5 set to be erased
-    ---> Package php-devel.x86_64 0:5.1.6-27.el5 set to be erased
-    ---> Package php-pear.noarch 1:1.4.9-6.el5 set to be erased
-    ---> Package php53.x86_64 0:5.3.2-6.ius.el5 set to be updated
-    ---> Package php53-cli.x86_64 0:5.3.2-6.ius.el5 set to be updated
-    ---> Package php53-common.x86_64 0:5.3.2-6.ius.el5 set to be updated
-    ---> Package php53-devel.x86_64 0:5.3.2-6.ius.el5 set to be updated
-    ---> Package php53-pear.noarch 1:1.8.1-4.ius.el5 set to be updated
-    ---> Package php53-pspell.x86_64 0:5.3.2-6.ius.el5 set to be updated
-    --> Finished Dependency Resolution
-    
-    Dependencies Resolved
-    
-    ====================================================================================================
-     Package                 Arch              Version                       Repository            Size
-    ====================================================================================================
-    Installing:
-     php53                   x86_64            5.3.2-6.ius.el5               ius                  2.0 M
-     php53-cli               x86_64            5.3.2-6.ius.el5               ius                  3.1 M
-     php53-common            x86_64            5.3.2-6.ius.el5               ius                  557 k
-     php53-devel             x86_64            5.3.2-6.ius.el5               ius                  595 k
-     php53-pear              noarch            1:1.8.1-4.ius.el5             ius                  420 k
-     php53-pspell            x86_64            5.3.2-6.ius.el5               ius                   22 k
-    Removing:
-     php                     x86_64            5.1.6-27.el5                  installed            6.2 M
-     php-cli                 x86_64            5.1.6-27.el5                  installed            5.3 M
-     php-common              x86_64            5.1.6-27.el5                  installed            397 k
-     php-devel               x86_64            5.1.6-27.el5                  installed            2.5 M
-     php-pear                noarch            1:1.4.9-6.el5                 installed            1.8 M
-    
-    Transaction Summary
-    ====================================================================================================
-    Install       6 Package(s)
-    Upgrade       0 Package(s)
-    Remove        5 Package(s)
-    Reinstall     0 Package(s)
-    Downgrade     0 Package(s)
-    
-    Total download size: 6.6 M
-    Is this ok [y/N]: y
-    Downloading Packages:
-    (1/6): php53-pspell-5.3.2-6.ius.el5.x86_64.rpm                               |  22 kB     00:00     
-    (2/6): php53-pear-1.8.1-4.ius.el5.noarch.rpm                                 | 420 kB     00:00     
-    (3/6): php53-common-5.3.2-6.ius.el5.x86_64.rpm                               | 557 kB     00:00     
-    (4/6): php53-devel-5.3.2-6.ius.el5.x86_64.rpm                                | 595 kB     00:00     
-    (5/6): php53-5.3.2-6.ius.el5.x86_64.rpm                                      | 2.0 MB     00:00     
-    (6/6): php53-cli-5.3.2-6.ius.el5.x86_64.rpm                                  | 3.1 MB     00:00     
-    ----------------------------------------------------------------------------------------------------
-    Total                                                                11 MB/s | 6.6 MB     00:00     
-    Running rpm_check_debug
-    Running Transaction Test
-    Finished Transaction Test
-    Transaction Test Succeeded
-    Running Transaction
-      Installing     : php53-cli                                                                   1/11 
-      Installing     : php53-common                                                                2/11 
-      Installing     : php53                                                                       3/11 
-      Installing     : php53-devel                                                                 4/11 
-      Installing     : php53-pspell                                                                5/11 
-      Installing     : php53-pear                                                                  6/11 
-      Erasing        : php-common                                                                  7/11 
-      Erasing        : php-cli                                                                     8/11 
-      Erasing        : php                                                                         9/11 
-      Erasing        : php-devel                                                                  10/11 
-      Erasing        : php-pear                                                                   11/11 
-    
-    Removed:
-      php.x86_64 0:5.1.6-27.el5        php-cli.x86_64 0:5.1.6-27.el5  php-common.x86_64 0:5.1.6-27.el5 
-      php-devel.x86_64 0:5.1.6-27.el5  php-pear.noarch 1:1.4.9-6.el5 
-    
-    Installed:
-      php53.x86_64 0:5.3.2-6.ius.el5                   php53-cli.x86_64 0:5.3.2-6.ius.el5              
-      php53-common.x86_64 0:5.3.2-6.ius.el5            php53-devel.x86_64 0:5.3.2-6.ius.el5            
-      php53-pear.noarch 1:1.8.1-4.ius.el5              php53-pspell.x86_64 0:5.3.2-6.ius.el5           
-    
-    Complete!
+<script type="text/javascript" src="https://asciinema.org/a/24559.js" id="asciicast-24559" async></script>
 
-And now, you should have a working install of PHP 5.3 on RHEL5::
+### Parallel Installable Packages
 
-    [root@linuxbox ~]# php -v
-    PHP 5.3.2 (cli) (built: Jun 24 2010 17:22:02) 
-    Copyright (c) 1997-2010 The PHP Group
-    Zend Engine v2.3.0, Copyright (c) 1998-2010 Zend Technologies
-    
-But don't forget to check and restart Apache::
+[Parallel packages][3] are specifically designed to coexist with their stock
+equivalent.  This means that they can be directly installed just like any other
+package.
 
-    [root@el5-i386 ~]# httpd -t
-    Syntax OK
-    
-    [root@el5-i386 ~]# /etc/init.d/httpd restart
-    Stopping httpd:                                            [  OK  ]
-    Starting httpd:
-    
-As the plugin suggest one piece of software is being replaced by another, for
-example you can not replace mysql with mysql55 if mysql is not initially
-installed::
+<script type="text/javascript" src="https://asciinema.org/a/25049.js" id="asciicast-25049" async></script>
 
-    # yum replace mysql --replace-with mysql55
-    Loaded plugins: fastestmirror, replace
-    Loading mirror speeds from cached hostfile
-     * base: centos-distro.cavecreek.net
-     * epel: fedora-epel.mirror.lstn.net
-     * extras: centos.mirror.lstn.net
-     * ius: pancks.sothatswhy.org.uk
-     * updates: mirror.raystedman.net
-    Replacing packages takes time, please be patient...
-    Error: Package 'mysql' is not installed.
-    
-One of the main reasons you may run in to this is with Enterprise Linux 6.
-
-Enterprise Linux 6 comes pre installed with mysql-libs as it is required by
-Postfix, but does not come with mysql. The simplest solution in these cases
-would be to first install mysql from base Redhat::
-
-    # yum install mysql
-    Loaded plugins: fastestmirror, replace
-    Loading mirror speeds from cached hostfile
-     * base: centos-distro.cavecreek.net
-     * epel: fedora-epel.mirror.lstn.net
-     * extras: centos.mirror.lstn.net
-     * ius: pancks.sothatswhy.org.uk
-     * updates: mirror.raystedman.net
-    Setting up Install Process
-    Resolving Dependencies
-    --> Running transaction check
-    ---> Package mysql.i686 0:5.1.52-1.el6_0.1 set to be updated
-    --> Finished Dependency Resolution
-    
-    Dependencies Resolved
-    
-    ====================================================================================================
-     Package                 Arch            Version                      Repository            Size
-    ====================================================================================================
-    Installing:
-     mysql                   i686             5.1.52-1.el6_0.1             updates               898 k
-    
-    Transaction Summary
-    ====================================================================================================
-    Install       1 Package(s)
-    Upgrade       0 Package(s)
-    
-    Total download size: 898 k
-    Installed size: 2.3 M
-    Is this ok [y/N]: y
-    Downloading Packages:
-    mysql-5.1.52-1.el6_0.1.i686.rpm                                                    | 898 kB     00:06     
-    Running rpm_check_debug
-    Running Transaction Test
-    Transaction Test Succeeded
-    Running Transaction
-    Warning: RPMDB altered outside of yum.
-      Installing     : mysql-5.1.52-1.el6_0.1.i686                                      1/1 
-    
-    Installed:
-      mysql.i686 0:5.1.52-1.el6_0.1                                                                                                                                                   
-    
-    Complete!
-
-Then replace with mysql55 from IUS::
-
-    # yum replace mysql --replace-with mysql55
-    Loaded plugins: fastestmirror, replace
-    Loading mirror speeds from cached hostfile
-     * base: centos-distro.cavecreek.net
-     * epel: mirror.utexas.edu
-     * extras: centos.mirror.lstn.net
-     * ius: pancks.sothatswhy.org.uk
-     * updates: mirror.raystedman.net
-    Replacing packages takes time, please be patient...
-    
-    WARNING: Unable to resolve all providers: ['config(mysql-libs)', 'libmysqlclient.so.16', 'libmysqlclient.so.16(libmysqlclient_16)',
-    'libmysqlclient_r.so.16', 'libmysqlclient_r.so.16(libmysqlclient_16)', 'mysql-libs(x86-32)', 'mysql(x86-32)']
-    
-    This may be normal depending on the package.  Continue? [y/N] y
-    Resolving Dependencies
-    --> Running transaction check
-    ---> Package mysql.i686 0:5.1.52-1.el6_0.1 set to be erased
-    ---> Package mysql-libs.i686 0:5.1.52-1.el6_0.1 set to be erased
-    --> Processing Dependency: libmysqlclient.so.16 for package: 2:postfix-2.6.6-2.el6.i686
-    --> Processing Dependency: libmysqlclient.so.16 for package: perl-DBD-MySQL-4.013-3.el6.i686
-    --> Processing Dependency: libmysqlclient.so.16(libmysqlclient_16) for package: 2:postfix-2.6.6-2.el6.i686
-    --> Processing Dependency: libmysqlclient.so.16(libmysqlclient_16) for package: perl-DBD-MySQL-4.013-3.el6.i686
-    ---> Package mysql55.i686 0:5.5.15-2.ius.el6 set to be updated
-    --> Processing Dependency: mysqlclient16 for package: mysql55-5.5.15-2.ius.el6.i686
-    ---> Package mysql55-libs.i686 0:5.5.15-2.ius.el6 set to be updated
-    --> Running transaction check
-    ---> Package mysqlclient16.i686 0:5.1.56-1.ius.el6 set to be updated
-    ---> Package perl-DBD-MySQL.i686 0:4.013-3.el6 set to be erased
-    ---> Package postfix.i686 2:2.6.6-2.el6 set to be erased
-    --> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-2.el6.i686
-    --> Running transaction check
-    ---> Package cronie.i686 0:1.4.4-2.el6 set to be erased
-    --> Processing Dependency: cronie = 1.4.4-2.el6 for package: cronie-anacron-1.4.4-2.el6.i686
-    --> Running transaction check
-    ---> Package cronie-anacron.i686 0:1.4.4-2.el6 set to be erased
-    --> Processing Dependency: /etc/cron.d for package: crontabs-1.10-32.1.el6.noarch
-    --> Restarting Dependency Resolution with new changes.
-    --> Running transaction check
-    ---> Package crontabs.noarch 0:1.10-32.1.el6 set to be erased
-    --> Finished Dependency Resolution
-    --> Running transaction check
-    ---> Package cronie.i686 0:1.4.4-2.el6 set to be erased
-    ---> Package cronie-anacron.i686 0:1.4.4-2.el6 set to be erased
-    ---> Package crontabs.noarch 0:1.10-32.1.el6 set to be erased
-    ---> Package perl-DBD-MySQL.i686 0:4.013-3.el6 set to be erased
-    ---> Package postfix.i686 2:2.6.6-2.el6 set to be erased
-    --> Finished Dependency Resolution
-    
-    Dependencies Resolved
-    
-    ====================================================================================================
-     Package                 Arch            Version                      Repository            Size
-    ====================================================================================================
-    Installing:
-     mysql55                 i686             5.5.15-2.ius.el6             ius                  5.8 M
-     mysql55-libs            i686             5.5.15-2.ius.el6             ius                  773 k
-    Removing:
-     mysql                   i686             5.1.52-1.el6_0.1             @updates             2.3 M
-     mysql-libs              i686             5.1.52-1.el6_0.1             @updates             3.9 M
-    Installing for dependencies:
-     mysqlclient16           i686             5.1.56-1.ius.el6             ius                  4.0 M
-    
-    Transaction Summary
-    ====================================================================================================
-    Install       3 Package(s)
-    Upgrade       0 Package(s)
-    Remove        2 Package(s)
-    Reinstall     0 Package(s)
-    Downgrade     0 Package(s)
-    
-    Total download size: 11 M
-    Is this ok [y/N]: y
-    Downloading Packages:
-    (1/3): mysql55-5.5.15-2.ius.el6.i686.rpm                                                          | 5.8 MB     00:02     
-    (2/3): mysql55-libs-5.5.15-2.ius.el6.i686.rpm                                                     | 773 kB     00:00     
-    (3/3): mysqlclient16-5.1.56-1.ius.el6.i686.rpm                                                    | 4.0 MB     00:01     
-    ------------------------------------------------------------------------------------------------------
-    Total                                                                                             2.7 MB/s |  11 MB     00:03     
-    Running rpm_check_debug
-    Running Transaction Test
-    Transaction Test Succeeded
-    Running Transaction
-      Installing     : mysql55-libs-5.5.15-2.ius.el6.i686                                             1/5 
-      Installing     : mysqlclient16-5.1.56-1.ius.el6.i686                                            2/5 
-      Installing     : mysql55-5.5.15-2.ius.el6.i686                                                  3/5 
-      Erasing        : mysql-5.1.52-1.el6_0.1.i686                                                    4/5 
-      Erasing        : mysql-libs-5.1.52-1.el6_0.1.i686                                               5/5 
-    
-    Removed:
-      mysql.i686 0:5.1.52-1.el6_0.1                                                         mysql-libs.i686 0:5.1.52-1.el6_0.1                                                        
-    
-    Installed:
-      mysql55.i686 0:5.5.15-2.ius.el6                                                       mysql55-libs.i686 0:5.5.15-2.ius.el6                                                      
-    
-    Dependency Installed:
-      mysqlclient16.i686 0:5.1.56-1.ius.el6                                                                                                                                           
-    
-    Complete!
-    
 ## Downgrading from IUS Packages to Stock RHEL Packages
 
 Please note that downgrading using the yum 'replace' plugin is slightly
@@ -465,7 +169,10 @@ stock version of yum in RHEL 5.5/6.0::
 [3]: SafeRepo.md#parallel-installable-package
 [4]: GettingStarted.md
 [5]: Packages.md
-[6]: https://bugs.launchpad.net/ius/+bug/453543
-[7]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
-[8]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
+[6]: https://github.com/iuscommunity/yum-plugin-replace
+[7]: http://man7.org/linux/man-pages/man8/yum-shell.8.html
+[8]: https://dnf.readthedocs.org
+[9]: https://bugs.launchpad.net/ius/+bug/453543
+[10]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
+[11]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
 
