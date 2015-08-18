@@ -107,31 +107,6 @@ just reverse the process you used to install it.  For example, you can switch
 the erase/install commands in yum shell, or change the order of package sets
 specified to the replace plugin.
 
-## Known Yum Dependency Resolution Issues
-
-The IUS CoreDev Team is aware of an issue with the previous versions of Yum and
-how it resolves dependencies when installing packages. For background on this
-matter please see the upstream bug reports that we have submitted:
-
-* [LaunchPad IUS Bug #453543][6]
-* [Yum Bug #296][7]
-* [Red Hat Bug #529719][8]
-
-As of Yum 3.2.26 (backported: 3.2.22-23) this is no longer a problem.
-
-We had previously implemented an optional and temporary workaround by
-backporting the original patch that we submitted to a yum3 package in the IUS
-EL 5 repositories. If you had used this yum3 package, please revert to the
-stock version of yum in RHEL 5.5/6.0::
-
-    # yum install yum-utils
-    
-    # yumdownloader yum
-    
-    # rpm -e --nodeps yum3
-    
-    # rpm -Uvh yum-*.rpm
-
 [0]: FAQs.md
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
 [2]: SafeRepo.md#safe-replacement-package
@@ -141,7 +116,3 @@ stock version of yum in RHEL 5.5/6.0::
 [6]: https://github.com/iuscommunity/yum-plugin-replace
 [7]: http://man7.org/linux/man-pages/man8/yum-shell.8.html
 [8]: https://dnf.readthedocs.org
-[9]: https://bugs.launchpad.net/ius/+bug/453543
-[10]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
-[11]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
-

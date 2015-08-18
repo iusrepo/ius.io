@@ -1,5 +1,7 @@
 # History
 
+## Project History
+
 The IUS Project started as an internal experiment at [Rackspace][1] in 2006.
 
 Rackspace customers would regularly request newer versions of PHP and MySQL.
@@ -24,6 +26,15 @@ Rackspace employees.  That said, **IUS is not a service of Rackspace!**  IUS
 packages are not covered by any service level agreements.  For more details,
 please read our [End User Agreement][3].
 
+## Removed Packages
+
+### yum3
+
+Older versions of yum in EL5 had issues resolving dependancies that were provided by packages with alternative names.  IUS submitted a patch [upstream][4] and also created a [yum3 package][5] with the fix.  The issue was eventually [backported to the stock RHEL yum package][6], which made the yum3 package unnecessary.
+
 [1]: https://www.rackspace.com
 [2]: SafeRepo.md
 [3]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
+[4]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
+[5]: https://bugs.launchpad.net/ius/+bug/453543
+[6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
