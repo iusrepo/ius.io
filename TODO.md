@@ -1,23 +1,26 @@
-## in progress
+## mainly finished
 
 * Home page
 * Getting started (release rpm or other wise)
 * Safe repo
-* History (launchpad)
-* Contrib
+* Contrib with wishlist
 * Philosophy (managing updates) 
-* Repos
+* Repos/packages
+* mirrors (spacewalk?)
+* Testimonials (JB links)
+
+## in progress
+
+* History (launchpad)
+* EOL
+* FAQs
 
 ## not started
  
 * FAQs
 * Client Guide (with translation)
-* EOL
 * Right for me?
 * Workflow (links to other docs where appropriate)/tools/devsetup
-* wishlist
-* mirrors (spacewalk?)
-* Testimonials (JB links)
 * IUS vs SCL
  
 ## ideas
