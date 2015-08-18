@@ -2,19 +2,19 @@
 
 ## New Package Request
 
-IUS users are encouraged to submit new package request to our [package
-wishlist][1].  We can not promise that will proceed with every request, so we
-came up with these questions to help evaluate requests:
+IUS users are encouraged to submit new package requests to our [package
+wishlist][1].  We can not promise that we will proceed with every request, so
+we came up with these questions to help evaluate requests:
 
 * Is the new package a good fit for IUS?
 * Will the new package be maintainable with our current resources?
 * Is the requester willing to test the new package to ensure expected behavior?
 
 We want to make sure new packages fit within the [scope of IUS][2].  The IUS
-covedev team does have limited resources, so we want to make sure new packages
-won't effect the maintenance of all packages.  Also, we would like to avoid
-requests like, "It would be cool if IUS packaged $RANDOM_APPLICATION, even
-though I do not have a use for it."
+CoreDev Team does have limited resources, so we want to make sure new packages
+won't effect the maintenance of existing packages.  Also, we would like to
+avoid requests like, "It would be cool if IUS packaged $RANDOM_APPLICATION,
+even though I do not have a use for it."
 
 ## Package Feedback
 
