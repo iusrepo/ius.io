@@ -100,44 +100,13 @@ package.
 
 <script type="text/javascript" src="https://asciinema.org/a/25049.js" id="asciicast-25049" async></script>
 
-## Downgrading from IUS Packages to Stock RHEL Packages
+## Reverting To Stock Packages
 
-Please note that downgrading using the yum 'replace' plugin is slightly
-experimental, and may not work for all package sets. If you have issues,
-please use the old way.
+If you want to switch from an IUS package back to the stock equivalent, you can
+just reverse the process you used to install it.  For example, you can switch
+the erase/install commands in yum shell, or change the order of package sets
+specified to the replace plugin.
 
-Downgrading is really the same process but backwards. The 'replace' plugin for
-yum also works for downgrading (but will produce many more missing providers)::
-
-    [root@linuxbox ~]# yum replace php53 --replace-with php
-    Loaded plugins: replace
-    Excluding Packages in global exclude list
-    Finished
-    Replacing packages takes time, please be patient...
-    
-    WARNING: Unable to resolve all providers: ['php53-cgi', 'php53-pcntl', 'php53-readline', 'php53-cli', 'config(php53-common)', 'curl.so()(64bit)', 'fileinfo.so()(64bit)', 'json.so()(64bit)', 'phar.so()(64bit)', 'php(api)', 'php(zend-abi)', 'php-json', 'php-pecl(Fileinfo)', 'php-pecl(json)', 'php-pecl(phar)', 'php-pecl(zip)', 'php-pecl-Fileinfo', 'php-pecl-json', 'php-pecl-phar', 'php-pecl-zip', 'php-zip', 'php53(api)', 'php53(zend-abi)', 'php53-api', 'php53-bz2', 'php53-calendar', 'php53-ctype', 'php53-curl', 'php53-date', 'php53-exif', 'php53-ftp', 'php53-gettext', 'php53-gmp', 'php53-hash', 'php53-iconv', 'php53-json', 'php53-libxml', 'php53-openssl', 'php53-pcre', 'php53-pecl(Fileinfo)', 'php53-pecl(json)', 'php53-pecl(phar)', 'php53-pecl(zip)', 'php53-pecl-Fileinfo', 'php53-pecl-json', 'php53-pecl-phar', 'php53-pecl-zip', 'php53-posix', 'php53-reflection', 'php53-session', 'php53-shmop', 'php53-simplexml', 'php53-sockets', 'php53-spl', 'php53-sysvmsg', 'php53-sysvsem', 'php53-sysvshm', 'php53-tokenizer', 'php53-wddx', 'php53-zend-abi', 'php53-zip', 'php53-zlib', 'zip.so()(64bit)', 'php53-common', 'config(php53-devel)', 'php53-devel', 'config(php53-pspell)', 'pspell.so()(64bit)', 'php53-pspell']
-    
-    This may be normal depending on the package.  Continue? [y/N] y
-    
-    
-    Removed:
-      php53.x86_64 0:5.3.2-6.ius.el5                   php53-cli.x86_64 0:5.3.2-6.ius.el5              
-      php53-common.x86_64 0:5.3.2-6.ius.el5            php53-devel.x86_64 0:5.3.2-6.ius.el5            
-      php53-pear.noarch 1:1.8.1-4.ius.el5              php53-pspell.x86_64 0:5.3.2-6.ius.el5           
-    
-    Installed:
-      php.x86_64 0:5.1.6-27.el5        php-cli.x86_64 0:5.1.6-27.el5  php-common.x86_64 0:5.1.6-27.el5 
-      php-devel.x86_64 0:5.1.6-27.el5  php-pear.noarch 1:1.4.9-6.el5 
-    
-    Complete!
-    
-And of course we once again have stock PHP for EL5::
-
-    [root@el5-i386 ~]# php -v
-    PHP 5.1.6 (cli) (built: Feb 26 2009 07:01:10) 
-    Copyright (c) 1997-2006 The PHP Group
-    Zend Engine v2.1.0, Copyright (c) 1998-2006 Zend Technologies
-    
 ## Known Yum Dependency Resolution Issues
 
 The IUS CoreDev Team is aware of an issue with the previous versions of Yum and
