@@ -1,5 +1,21 @@
 # Contributing to IUS
 
+## New Package Request
+
+IUS users are encouraged to submit new package request to our [package
+wishlist][1].  We can not promise that will proceed with every request, so we
+came up with these questions to help evaluate requests:
+
+* Is the new package a good fit for IUS?
+* Will the new package be maintainable with our current resources?
+* Is the requester willing to test the new package to ensure expected behavior?
+
+We want to make sure new packages fit within the [scope of IUS][2].  The IUS
+covedev team does have limited resources, so we want to make sure new packages
+won't effect the maintenance of all packages.  Also, we would like to avoid
+requests like, "It would be cool if IUS packaged $RANDOM_APPLICATION, even
+though I do not have a use for it."
+
 ## Package Feedback
 
 The most important way to contribute is to provide feedback on our packages.
@@ -19,7 +35,7 @@ repository and installing/updating from there.  We also recommend configuring
 automatic nightly updates so that new updates are applied as soon as possible.
 If you see an issue with a testing package, let us know as soon as you can; if
 notified soon enough we can fix the issue before the update is pushed to the
-stable repositories and affects more users.  Please see our [release policy][1]
+stable repositories and affects more users.  Please see our [release policy][3]
 for more information about how long packages stay in each repository.
 
 ## Spread the Word
@@ -43,8 +59,8 @@ way to help.
 ## RPM Packaging
 
 Users can participate in the development of our RPM packages by sending us pull
-requests against our [spec files][2] on GitHub.  We also accept new package
-requests on our [wishlist][3].
+requests against our [spec files][4] on GitHub.  We also accept new package
+requests on our [wishlist][5].
 
 Currently only members of the Core Development Team who are Rackspace employees
 have access to our package build system.  We are using a custom solution to
@@ -52,6 +68,8 @@ build both IUS packages and also private packages for Rackspace.  We plan to
 eventually deploy a publicly accessible build system to allow trusted community
 members to build IUS packages.
 
-[1]: Philosophy.md#release-policy
-[2]: https://github.com/iuscommunity-pkg
-[3]: https://github.com/iuscommunity/wishlist
+[1]: https://github.com/iuscommunity/wishlist
+[2]: index.md#about
+[3]: Philosophy.md#release-policy
+[4]: https://github.com/iuscommunity-pkg
+[5]: https://github.com/iuscommunity/wishlist
