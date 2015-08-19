@@ -44,6 +44,8 @@ Q: Does IUS cost anything?
 
 Q: How can I contribute to IUS?
 
+A: See our [contributing page][1].
+
 Q: How do I install packages from testing?
 
 Q: How can I become a packager?
@@ -77,8 +79,9 @@ A: It is similar to the relationship between Red Hat® and EPEL.
 
 Q: How can I be notified when an IUS package I am using reaches EOL (end of life) status?
 
-A: We post to our [public mailing list][1] when a package has reached EOL status.
+A: We post to our [public mailing list][2] when a package has reached EOL status.
 
 
 [0]: History.md
-[1]: https://launchpad.net/~ius-community
+[1]: Contributing.md
+[2]: https://launchpad.net/~ius-community
