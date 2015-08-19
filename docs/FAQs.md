@@ -72,11 +72,8 @@ Q: What is the relationship between Rackspace and IUS?
 A: It is similar to the relationship between Red Hat® and EPEL.
 
 * $COMPANY sponsors $PROJECT via engineer man-hours, servers, and bandwidth.
-* $COMPANY support is very familiar with packages from $PROJECT (possibly even
-  to the point where the packages could be mistaken as supported).
 * The escalation path for $PROJECT packages is with $PROJECT, not with $COMPANY.
 * No $COMPANY service level agreements apply to packages from $PROJECT.
-* Using $PROJECT packages does not automatically void $COMPANY SLA.
 
 Q: How can I be notified when an IUS package I am using reaches EOL (end of life) status?
 
