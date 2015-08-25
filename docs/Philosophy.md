@@ -3,7 +3,7 @@
 ## Overview
 
 Stock Enterprise Linux packages can get pretty far out of date compared to
-their respective upstream projects.  While Red Hat® [backports][1] security
+their respective upstream projects.  While Red Hat [backports][1] security
 fixes, new features are rarely added.  This approach results in a very stable
 overall operating system, but can be frustrating to users when a new upstream
 feature is needed.
@@ -71,19 +71,19 @@ Considering all the factors, we feel that the benefits far outweigh this
 inconvenience.
 
 In addition to appending the major and minor version numbers, most IUS packages
-also have a "u" suffix.  We started using that suffix in 2010 when Red Hat®
+also have a "u" suffix.  We started using that suffix in 2010 when Red Hat
 announced that [RHEL 5.6 would be adding a package named php53 to the base
 repositories][7].  This conflicted with our existing php53 package, so we knew
 we had to [make a change][8].  David Strauss [suggested on our mailing list][9]
 that we add a "u" suffix to prevent the name conflict.  We liked the idea, and
 [proceeded with implementing it][10].  At the time, [we thought it would be a
-one-time fix][11].  In 2013, Red Hat® released a product called [Software
+one-time fix][11].  In 2013, Red Hat released a product called [Software
 Collections][2] (RHSCL).  Some of the packages that were offered overlapped
 with IUS packages.  We were concerned that we would face more package name
 conflicts, but were relieved to hear that RHSCL would not be enabled by
-default.  However, Red Hat® later decided to add the mysql55 SCL packages to
-the base RHEL 5 repository.  The SCL metapackage mysql55 had the same name as
-our existing mysql55 package.  We evaluated renaming our mysql55 package to
+default.  However, Red Hat later decided to add the mysql55 SCL packages to the
+base RHEL 5 repository.  The SCL metapackage mysql55 had the same name as our
+existing mysql55 package.  We evaluated renaming our mysql55 package to
 mysql55u to avoid the name conflict, but we were not able to find a solution
 that provided seamless upgrades.  Since then, we have decided to add the "u"
 suffix to all our new packages to keep from getting in the same situation

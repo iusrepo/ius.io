@@ -10,7 +10,7 @@ results.
 ## Terminology
 
 * **stock distribution**:  A Linux distribution as it comes from the vendor.
-  Examples include Red Hat® Enterprise Linux, CentOS, or Fedora.
+  Examples include Red Hat Enterprise Linux, CentOS, or Fedora.
 * **stock package**: A package that a stock distribution provides by default in
   their enabled repositories.
 * **third party repository**:  A package repository intended for use with a
