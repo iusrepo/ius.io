@@ -23,10 +23,10 @@ more.  A complete list can be found [here][1].
 ## Contact Us
 
 Most of our development is done in [GitHub][2], so that is the best way to
-reach us.  Problems with a specific package should be reported as issues in the
-appropriate repository under the [iuscommunity-pkg][3] organization.  Several
-other repositories exist under the [iuscommunity][4] organization for various
-other things, such as [this website][5] or our [new package wishlist][6].
+reach us.  Our package sources can be found in the [iuscommunity-pkg][3]
+organization; issues for specific packages should be reported here.  We also
+have the [iuscommunity][4] organization for everything else, such as [the
+source for this website][5] and our [new package wishlist][6].
 
 Other contact methods:
 
