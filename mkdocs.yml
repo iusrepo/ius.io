@@ -1,5 +1,4 @@
 site_name: IUS Project
-repo_url: https://github.com/iuscommunity
 strict: True
 markdown_extensions:
   - toc:
