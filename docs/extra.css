@@ -16,8 +16,8 @@
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #fff;
     background-color: #022f5a;
+    color: #fff;
 }
 
 
