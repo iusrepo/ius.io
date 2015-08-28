@@ -46,7 +46,7 @@ Once the IUS repository is enabled, you can use one of these commands to list
 all packages in the repository.
 
 ```bash
-# EL5/6
+# EL5/6/7
 yum --disablerepo=* --enablerepo=ius list available
 # EL7
 yum repository-packages ius list available
