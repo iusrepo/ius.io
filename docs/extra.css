@@ -31,14 +31,14 @@
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    background-color: #022f5a;
-    color: #fff;
+    background-color: #eeeeee;
+    color: #157ab5;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    background-color: #022f5a;
-    color: #fff;
+    background-color: #eeeeee;
+    color: #157ab5;
 }
 
 h4, a {
