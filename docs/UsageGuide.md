@@ -72,25 +72,45 @@ cannot be installed at the same time.  If the stock equivalent of an IUS
 package is not already installed, then you can just directly install the
 desired package.
 
-<script type="text/javascript" src="https://asciinema.org/a/24585.js" id="asciicast-24585" async></script>
+[asciinema demo][6]
+
+```bash
+yum install redis30u
+```
 
 If the stock/EPEL equvalent of an IUS package is already installed, you must
 uninstall it first.  If other packages depend on your installed stock package,
 you may need to perform the removal and installation in a single transaction.
 The native yum way to do this is via [yum shell][7].
 
-<script type="text/javascript" src="https://asciinema.org/a/24507.js" id="asciicast-24507" async></script>
+[asciinema demo][8]
 
-IUS also maintains the [yum replace plugin][6] to simplify the process.
+```bash
+yum shell
+> erase mysql-libs
+> install mysql56u mysql56u-libs mysql56u-server mysqlclient16
+> run
+```
 
-<script type="text/javascript" src="https://asciinema.org/a/24503.js" id="asciicast-24503" async></script>
+IUS also maintains the [yum replace plugin][9] to simplify this process.
 
-There is another option in the new [dnf][8] package manager.  The flag
-`--allowerasing` allows you erase conflicting packages in the same transaction.
+[asciinema demo][10]
+
+```bash
+yum replace php --replace-with php56u
+```
+
+There is another option in the new [dnf][11] package manager.  The flag
+[`--allowerasing`][12] allows you erase conflicting packages in the same
+transaction.
 
 _Note: Dnf is not yet available in base RHEL, but has been backported to EPEL 7._
 
-<script type="text/javascript" src="https://asciinema.org/a/24559.js" id="asciicast-24559" async></script>
+[asciinema demo][13]
+
+```bash
+dnf --allowerasing install git2u
+```
 
 ### Parallel Installable Packages
 
@@ -98,7 +118,11 @@ _Note: Dnf is not yet available in base RHEL, but has been backported to EPEL 7.
 equivalent.  This means that they can be directly installed just like any other
 package.
 
-<script type="text/javascript" src="https://asciinema.org/a/25049.js" id="asciicast-25049" async></script>
+[asciinema demo][14]
+
+```bash
+yum install python34u
+```
 
 ## Reverting To Stock Packages
 
@@ -113,6 +137,12 @@ specified to the replace plugin.
 [3]: SafeRepo.md#parallel-installable-package
 [4]: GettingStarted.md
 [5]: Packages.md
-[6]: https://github.com/iuscommunity/yum-plugin-replace
+[6]: https://asciinema.org/a/24585
 [7]: http://man7.org/linux/man-pages/man8/yum-shell.8.html
-[8]: https://dnf.readthedocs.org
+[8]: https://asciinema.org/a/24507
+[9]: https://github.com/iuscommunity/yum-plugin-replace
+[10]: https://asciinema.org/a/24503
+[11]: https://dnf.readthedocs.org
+[12]: http://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
+[13]: https://asciinema.org/a/24559
+[14]: https://asciinema.org/a/24505
