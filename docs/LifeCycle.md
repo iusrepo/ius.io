@@ -1,10 +1,12 @@
 # Life Cycle
 
+## OS Life Cycle
 IUS only supports the current base release for RHEL and CentOS.  Older point
 releases and other distributions based on Red Hat may work, but with limited
 resource we focus efforts on our supported OSes.
 
-Also, IUS packages work differently from Red Hat/CentOS packages when it comes
+## Package Life Cycle
+IUS packages work differently from Red Hat/CentOS packages when it comes
 life cycle management/EOL (end of life). Generally, Red Hat/CentOS will support
 and backport packages for the entire life span of the OS release, even if the
 upstream project has ended support for the version in question. IUS follows the
