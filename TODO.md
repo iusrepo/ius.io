@@ -11,12 +11,11 @@
 * ~~EOL~~ Life Cyle
 * IUS vs SCL
 * Client Guide (with translation)
-
+* FAQs (including Right for me?)
 
 ## in progress
 
 * History (launchpad)
-* FAQs (including Right for me?)
 
 ## not started
 
