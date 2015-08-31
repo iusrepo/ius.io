@@ -112,6 +112,18 @@ just reverse the process you used to install it.  For example, you can switch
 the erase/install commands in yum shell, or change the order of package sets
 specified to the replace plugin.
 
+## Using Testing Repositories
+
+New packages requests and package updates appear in the testing repositories
+before graduating to the stable repositories.  While we do not recommend using
+the testing repositories in production, there may be a time when you need use them.
+
+[asciinema demo][15]
+```bash
+yum --enablerepo=ius-testing install php56u-pecl-uploadprogress
+```
+
+
 [0]: FAQs.md
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
 [2]: SafeRepo.md#safe-replacement-package
@@ -127,3 +139,5 @@ specified to the replace plugin.
 [12]: http://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
 [13]: https://asciinema.org/a/24559
 [14]: https://asciinema.org/a/24505
+[15]: https://asciinema.org/a/a1dznemtxfczm4t8309i9kgi4
+
