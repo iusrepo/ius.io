@@ -4,25 +4,23 @@
 * Getting started (release rpm or other wise)
 * Safe repo
 * Contrib with wishlist
-* Philosophy (managing updates) 
+* Philosophy (managing updates)
 * Repos/packages
 * mirrors (spacewalk?)
 * Testimonials (JB links)
+* ~~EOL~~ Life Cyle
+* IUS vs SCL
+* Client Guide (with translation)
+
 
 ## in progress
 
 * History (launchpad)
-* EOL
-* FAQs
+* FAQs (including Right for me?)
 
 ## not started
- 
-* FAQs
-* Client Guide (with translation)
-* Right for me?
-* Workflow (links to other docs where appropriate)/tools/devsetup
-* IUS vs SCL
- 
+
 ## ideas
 
-* config management (include example how people use puppet/chef/salt with IUS packages) 
+* config management (include example how people use puppet/chef/salt with IUS packages)
+* Workflow (links to other docs where appropriate)/tools/devsetup
