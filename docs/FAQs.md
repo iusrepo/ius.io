@@ -1,8 +1,6 @@
 # FAQs
 
-## FAQs from old site
-
-### General
+## General
 
 Q: What is the IUS community project?
 
@@ -35,16 +33,48 @@ Q: Why can’t I just do a ‘yum upgrade’ and update my RPMs?
 
 A: See [Naming Convention][2]
 
-Q: Why are IUS packages named differently?
+Q: Why are IUS packages named differently and what the does the 'u' stand for?
 
 A: See [Naming Convention][2]
 
-### Is IUS right for me?
+Q: Which repositories should I use for Scientific Linux, Oracle Linux or other
+distribution based on Red Hat?
+
+A: We would recommend using our Red Hat repositories for these OSes since they
+are based on RHEL and not CentOS.
+
+Q: Why are mysqlclient15 and mysqlclient16 such an old version?
+
+A: Our mysqlclient15 and mysqlclient16 package provide the stock version of
+libmysqlclient, so stock package can interact with our msyql-server packages.
+
+Q: Can IUS be used with DNF?
+
+A: EPEL does contain DNF packages for EL 7, and can be used with IUS
+repositories.
+
+Q: What happened to LaunchPad?
+
+A: When the IUS project first started, LaunchPad was the best location for
+version control, bugs and mailing lists.  Unfortnatly, LaunchPad is starting to
+show its age and thus we switched to GitHub for version control and
+bugs/issues. We still use LaunchPad for our mailing lists.
+
+
+## Is IUS right for me?
 
 Q: Am I a Rackspace customer?
 
 A: Rackspace sponsors IUS, but anyone is free to use IUS packages.  Just using
 IUS packages does not make you a Rackspace customer.
+
+Q: What is the relationship between Rackspace and IUS?
+
+A: It is similar to the relationship between Red Hat and EPEL.
+
+* $COMPANY sponsors $PROJECT via engineer man-hours, servers, and bandwidth.
+* The escalation path for $PROJECT packages is with $PROJECT, not with $COMPANY.
+* No $COMPANY service level agreements apply to packages from $PROJECT.
 
 Q: Can I afford the risk of using IUS package vs super stable packages from Red
 Hat?
@@ -89,13 +119,21 @@ explain how they upgraded PHP/MySQL/etc. on their RHEL server. But how many do
 you find that explain how they keep that version of PHP/MySQL/etc. updated and
 patched? Not many, until now.
 
-Also see [IUS vs. Software Collections][4].
+Q: How is IUS different than SCL?
+
+A:  See [IUS vs. Software Collections][4].
 
 Q: Does IUS cost anything?
 
 A: IUS packages are free as in speech and beer.
 
-### Development and Packaging Questions
+Q: How can I be notified when an IUS package I am using reaches EOL (end of
+life) status?
+
+A: We post to our [public mailing list][10] when a package has reached EOL
+status.
+
+## Development and Packaging Questions
 
 Q: How can I contribute to IUS?
 
@@ -114,16 +152,6 @@ us to continue work on our own. Additionally, the preceptor to MonkeyFarm was
 RPE (The Rackspace Packaging Environment) which was started before Koji was
 released publicly (and before we knew about it).
 
-### New questions not on the old site
-
-Q: How is IUS different than SCL?
-
-A:  See [IUS vs. Software Collections][4].
-
-Q: What does the 'u' stand for in the IUS package names?
-
-A: See [Naming Convention][2].
-
 Q: Why are there separate repositories for Red Hat and CentOS?
 
 A: There are times when Red Hat makes a changes during a new point releases
@@ -136,45 +164,6 @@ Also, a new point release for CentOS does not happen the same day as RHEL. So
 how can we make sure that our packages will work on both Red Hat and CentOS
 during the gap between Red Hat and CentOS point releases (that requires updates
 to our packages)?  The answer we came up with to have separate repositories.
-
-Q: Which repositories should I use for Scientific Linux, Oracle Linux or other
-distribution based on Red Hat?
-
-A: We would recommend using our Red Hat repositories for these OSes since they
-are based on RHEL and not CentOS.
-
-Q: Why are mysqlclient15 and mysqlclient16 such an old version?
-
-A: Our mysqlclient15 and mysqlclient16 package provide the stock version of
-libmysqlclient, so stock package can interact with our msyql-server packages.
-
-Q: Can IUS be used with DNF?
-
-A: EPEL does contain DNF packages for EL 7, and can be used with IUS
-repositories.
-
-Q: What happened to LaunchPad?
-
-A: When the IUS project first started, LaunchPad was the best location for
-version control, bugs and mailing lists.  Unfortnatly, LaunchPad is starting to
-show its age and thus we switched to GitHub for version control and
-bugs/issues.
-
-Q: What is the relationship between Rackspace and IUS?
-
-A: It is similar to the relationship between Red Hat® and EPEL.
-
-* $COMPANY sponsors $PROJECT via engineer man-hours, servers, and bandwidth.
-* The escalation path for $PROJECT packages is with $PROJECT, not with
-* $COMPANY.  No $COMPANY service level agreements apply to packages from
-* $PROJECT.
-
-Q: How can I be notified when an IUS package I am using reaches EOL (end of
-life) status?
-
-A: We post to our [public mailing list][10] when a package has reached EOL
-status.
-
 
 [1]: History.md
 [2]: Philosophy.md#Naming-Convention
