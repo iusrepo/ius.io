@@ -40,25 +40,6 @@ IUS packages will be one of two different types.
 
 Configuration steps can be found in our [getting started guide][4].
 
-## View Available Packages
-
-Once the IUS repository is enabled, you can use one of these commands to list
-all packages in the repository.
-
-```bash
-# EL5/6/7
-yum --disablerepo=* --enablerepo=ius list available
-# EL7
-yum repository-packages ius list available
-# future
-dnf repository-packages ius list available
-```
-
-You can view the packages in the testing, development, or archive repositories
-by using the corresponding repoid, such as "ius-testing".
-
-You can also look through our [repoview directories][5] in a web browser.
-
 ## Installing IUS Packages
 
 There are multiple ways to install IUS packages.  The best method will depend
