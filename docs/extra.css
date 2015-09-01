@@ -43,6 +43,11 @@
     color: #157ab5;
 }
 
+.form-control:focus {
+    border-color: #347cb7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(52, 124, 183, 0.6);
+}
+
 h4, a {
     color: #347cb7;
 }
