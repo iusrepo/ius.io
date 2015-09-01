@@ -1,6 +1,6 @@
 # IUS Project
 
-#### _**I**nline with **U**pstream **S**table_
+> _**I**nline with **U**pstream **S**table_
 
 ## About
 
