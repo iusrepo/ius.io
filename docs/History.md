@@ -26,11 +26,24 @@ Rackspace employees.  That said, **IUS is not a service of Rackspace!**  IUS
 packages are not covered by any service level agreements.  For more details,
 please read our [End User Agreement][3].
 
-## Removed Packages
+## Notable Removed Packages
 
 ### yum3
 
-Older versions of yum in EL5 had issues resolving dependancies that were provided by packages with alternative names.  IUS submitted a patch [upstream][4] and also created a [yum3 package][5] with the fix.  The issue was eventually [backported to the stock RHEL yum package][6], which made the yum3 package unnecessary.
+Older versions of yum in EL5 had issues resolving dependancies that were
+provided by packages with alternative names.  IUS submitted a patch
+[upstream][4] and also created a [yum3 package][5] with the fix.  The issue was
+eventually [backported to the stock RHEL yum package][6], which made the yum3
+package unnecessary.
+
+### openssl10
+
+Several years ago, we received a request for an updated version of
+[openssl][7].  When the request first came in, there was an internal debate if
+IUS should package something so important to the whole OS like openssl.  We
+decided to package it and had second thoughts about that decision almost
+immediately.  Since Red Hat updated their openssl packages, we pulled our
+openssl10 packages from the stable repositories.
 
 [1]: https://www.rackspace.com
 [2]: SafeRepo.md
@@ -38,3 +51,4 @@ Older versions of yum in EL5 had issues resolving dependancies that were provide
 [4]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
 [5]: https://bugs.launchpad.net/ius/+bug/453543
 [6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
+[7]: https://bugs.launchpad.net/ius/+bug/1034961
