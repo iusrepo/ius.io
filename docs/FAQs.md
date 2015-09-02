@@ -25,10 +25,6 @@ software.
 
 **I**nline with **U**pstream **S**table
 
-#### What is the history of the IUS community project?
-
-See our [history page][1].
-
 #### Why can’t I just do a ‘yum upgrade’ and update my RPMs?
 
 See [Naming Convention][2].
@@ -159,7 +155,6 @@ how can we make sure that our packages will work on both Red Hat and CentOS
 during the gap between Red Hat and CentOS point releases (that requires updates
 to our packages)?  The answer we came up with to have separate repositories.
 
-[1]: History.md
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
 [4]: IUSvsSCL.md
