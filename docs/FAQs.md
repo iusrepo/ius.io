@@ -49,10 +49,7 @@ EPEL does contain DNF packages for EL 7, and can be used with IUS repositories.
 
 #### What happened to LaunchPad?
 
-When the IUS project first started, LaunchPad was the best location for version
-control, bugs and mailing lists.  Unfortnatly, LaunchPad is starting to show
-its age and thus we switched to GitHub for version control and bugs/issues. We
-still use LaunchPad for our mailing lists.
+See [LaunchPad][11].
 
 ### Is IUS right for me?
 
@@ -164,3 +161,6 @@ to our packages)?  The answer we came up with to have separate repositories.
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.4_Technical_Notes/RHEA-2013-0422.html
 [9]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.7_Technical_Notes/package-ImageMagick.html
 [10]: https://launchpad.net/~ius-community
+[11]: History.md#launchpad
+
+

@@ -45,6 +45,14 @@ decided to package it and had second thoughts about that decision almost
 immediately.  Since Red Hat updated their openssl packages, we pulled our
 openssl10 packages from the stable repositories.
 
+## LaunchPad
+
+When the IUS project first started, [LaunchPad][8] was the best location for
+version control, bugs and mailing lists. Unfortunately, LaunchPad is starting
+to show its age and thus we switched to GitHub for version control and
+bugs/issues. We still use LaunchPad for our mailing lists.
+
+
 [1]: https://www.rackspace.com
 [2]: SafeRepo.md
 [3]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
@@ -52,3 +60,4 @@ openssl10 packages from the stable repositories.
 [5]: https://bugs.launchpad.net/ius/+bug/453543
 [6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
 [7]: https://bugs.launchpad.net/ius/+bug/1034961
+[8]: https://launchpad.net/ius
