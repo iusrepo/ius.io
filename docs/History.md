@@ -57,7 +57,7 @@ bugs/issues. We still use LaunchPad for our mailing lists.
 [1]: https://www.rackspace.com
 [2]: SafeRepo.md
 [3]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
-[4]: http://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
+[4]: https://web.archive.org/web/20120114083114/http://yum.baseurl.org/ticket/296
 [5]: https://bugs.launchpad.net/ius/+bug/453543
 [6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
 [7]: https://bugs.launchpad.net/ius/+bug/1034961
