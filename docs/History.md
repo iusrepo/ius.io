@@ -48,7 +48,7 @@ it and recommend all users switch back to the stock OpenSSL packages.
 
 ## LaunchPad
 
-When the IUS project first started, [LaunchPad][8] was the best location for
+When the IUS project first started, [LaunchPad][9] was the best location for
 version control, bugs and mailing lists. Unfortunately, LaunchPad is starting
 to show its age and thus we switched to GitHub for version control and
 bugs/issues. We still use LaunchPad for our mailing lists.
@@ -62,4 +62,4 @@ bugs/issues. We still use LaunchPad for our mailing lists.
 [6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
 [7]: https://bugs.launchpad.net/ius/+bug/1034961
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/6.5_Release_Notes/index.html#bh-openssl-updated-to-version-1.0.1
-[8]: https://launchpad.net/ius
+[9]: https://launchpad.net/ius
