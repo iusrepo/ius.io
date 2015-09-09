@@ -92,8 +92,8 @@ configuration of the repository you do not want to use.  Please refer to the
 * [RHSCL Guide][12]
 * [RHSCL Update Policy][13]
 
-[1]: http://www.redhat.com/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-platform-with-latest-versions-of-popular-programming-languages-and-databases
-[2]: http://developerblog.redhat.com/announcing-softwarecollections-org/
+[1]: https://www.redhat.com/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-platform-with-latest-versions-of-popular-programming-languages-and-databases
+[2]: https://developerblog.redhat.com/announcing-softwarecollections-org/
 [3]: SafeRepo.md#safe-replacement-package
 [4]: SafeRepo.md#parallel-installable-package
 [5]: https://access.redhat.com/support/policy/updates/rhscl/
@@ -102,6 +102,6 @@ configuration of the repository you do not want to use.  Please refer to the
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Deployment_Guide/ch-Migrating_from_MySQL_5.0_to_MySQL_5.5.html
 [9]: https://www.softwarecollections.org
 [10]: https://www.redhat.com/about/news/archive/2013/6/red-hat-software-collections-1.0-beta-now-available
-[11]: http://developerblog.redhat.com/2013/09/12/rhscl1-ga/
+[11]: https://developerblog.redhat.com/2013/09/12/rhscl1-ga/
 [12]: https://access.redhat.com/site/documentation/en-US/Red_Hat_Developer_Toolset/1/html/Software_Collections_Guide/
 [13]: https://access.redhat.com/support/policy/updates/rhscl/
