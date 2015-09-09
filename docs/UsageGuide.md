@@ -136,7 +136,7 @@ yum --enablerepo=ius-testing install php56u-pecl-uploadprogress
 [9]: https://github.com/iuscommunity/yum-plugin-replace
 [10]: https://asciinema.org/a/24503
 [11]: https://dnf.readthedocs.org
-[12]: http://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
+[12]: https://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
 [13]: https://asciinema.org/a/24559
 [14]: https://asciinema.org/a/24505
 [15]: https://asciinema.org/a/a1dznemtxfczm4t8309i9kgi4
