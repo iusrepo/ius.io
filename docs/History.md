@@ -39,11 +39,12 @@ package unnecessary.
 ### openssl10
 
 Several years ago, we received a request for an updated version of
-[openssl][7].  When the request first came in, there was an internal debate if
-IUS should package something so important to the whole OS like openssl.  We
-decided to package it and had second thoughts about that decision almost
-immediately.  Since Red Hat updated their openssl packages, we pulled our
-openssl10 packages from the stable repositories.
+[OpenSSL][7].  When the request first came in, there was an internal debate if
+IUS should package something so important to the whole operating system like
+OpenSSL.  We decided to package it and had second thoughts about that decision
+almost immediately.  In RHEL 6.5, Red Hat [updated OpenSSL to version
+1.0.1][8].  Due to the issues with our openssl10 package, we decided to remove
+it and recommend all users switch back to the stock OpenSSL packages.
 
 ## LaunchPad
 
@@ -60,4 +61,5 @@ bugs/issues. We still use LaunchPad for our mailing lists.
 [5]: https://bugs.launchpad.net/ius/+bug/453543
 [6]: https://bugzilla.redhat.com/show_bug.cgi?id=529719
 [7]: https://bugs.launchpad.net/ius/+bug/1034961
+[8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/6.5_Release_Notes/index.html#bh-openssl-updated-to-version-1.0.1
 [8]: https://launchpad.net/ius
