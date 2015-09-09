@@ -32,8 +32,7 @@ provide, users of the repositories are put at risk.**
 
 Here is a common example.  A user subscribes to a third party repository for a
 newer major version of MySQL.  Later, they discover that their application is
-broken because PHP was also updated to a new major version during automatic
-updates.
+broken because PHP was also updated to a new major version during updates.
 
 ### Examples of Safe Repositories
 
