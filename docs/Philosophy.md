@@ -65,10 +65,9 @@ zabbix22.  Using alternative names from stock packages has several benefits.
   not work with it.  It would be difficult to quickly determine which php
   packages work correctly with each other.
 
-There only drawback to the alternative name is that installation of IUS
-packages can sometimes feel cumbersome, since you can't directy upgrade.
-Considering all the factors, we feel that the benefits far outweigh this
-inconvenience.
+The only drawback to this naming format is that you can't directly upgrade from
+stock packages to IUS packages.  Considering all the factors, we feel that the
+benefits far outweigh this inconvenience.
 
 In addition to appending the major and minor version numbers, most IUS packages
 also have a "u" suffix.  We started using that suffix in 2010 when Red Hat
