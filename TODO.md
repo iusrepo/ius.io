@@ -6,7 +6,7 @@
 * Contrib with wishlist
 * Philosophy (managing updates)
 * Repos/packages
-* mirrors (spacewalk?)
+* Mirrors (spacewalk?)
 * Testimonials (JB links)
 * ~~EOL~~ Life Cyle
 * IUS vs SCL
