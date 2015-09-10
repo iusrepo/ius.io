@@ -1,4 +1,4 @@
-site_name: IUS Project
+site_name: IUS
 copyright: Sponsered by <a href="https://www.rackspace.com">Rackspace</a>.
 strict: True
 markdown_extensions:

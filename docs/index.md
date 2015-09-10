@@ -1,4 +1,4 @@
-# IUS Project
+# IUS Community Project
 
 > _**I**nline with **U**pstream **S**table_
 
