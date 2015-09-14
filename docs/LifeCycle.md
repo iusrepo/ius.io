@@ -60,30 +60,14 @@ additions.
 
 ### Python
 
-[dev cycle](https://docs.python.org/devguide/devcycle.html)
-
-* 2.6 - 2013-10-29
-    * [pep-0361](https://www.python.org/dev/peps/pep-0361/)
-    * last release: [2.6.9](https://www.python.org/download/releases/2.6.9/)
-* 2.7 - 2020-??-??
-    * [extended from 5 to 10 years](https://hg.python.org/peps/rev/76d43e52d978)
-    * [pep-0373](https://www.python.org/dev/peps/pep-0373/)
-    * last release: [2.7.10](https://www.python.org/downloads/release/python-2710/) (not final)
-* 3.0 - 2009-06-27
-    * [pep-0361](https://www.python.org/dev/peps/pep-0361/)
-    * last release: [3.0.1](https://www.python.org/download/releases/3.0.1/)
-* 3.1 - 2012-06-27
-    * [pep-0375](https://www.python.org/dev/peps/pep-0375/)
-    * last release: [3.1.5](https://www.python.org/downloads/release/python-315/)
-* 3.2 - 2016-02-20
-    * [pep-0392](https://www.python.org/dev/peps/pep-0392/)
-    * last release: [3.2.6](https://www.python.org/downloads/release/python-326/) (not final)
-* 3.3 - 2017-09-29
-    * [pep-0398](https://www.python.org/dev/peps/pep-0398/)
-    * last release: [3.3.6](https://www.python.org/downloads/release/python-336/) (not final)
-* 3.4 - TBD
-    * [pep-0429](https://www.python.org/dev/peps/pep-0429/)
-    * last release: [3.4.3](https://www.python.org/downloads/release/python-343/) (not final)
+* [Development Cycle][17]
+* 2.6 EOL date: [2013-10-29][18]
+* 2.7 expected EOL date: [2020-07-03][19]
+* 3.0 EOL date: [2009-06-27][20]
+* 3.1 EOL date: [2012-06-27][21]
+* 3.2 expected EOL date: [2016-02-20][22]
+* 3.3 expected EOL date: [2017-09-29][23]
+* 3.4 expected EOL date: [TBD][24]
 
 ### Redis
 
@@ -109,3 +93,11 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
 [16]: https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/
+[17]: https://docs.python.org/devguide/devcycle.html
+[18]: https://www.python.org/download/releases/2.6.9/
+[19]: https://www.python.org/dev/peps/pep-0373/
+[20]: https://www.python.org/download/releases/3.0.1/
+[21]: https://www.python.org/download/releases/3.1.5/
+[22]: https://www.python.org/dev/peps/pep-0392/
+[23]: https://www.python.org/dev/peps/pep-0398/
+[24]: https://www.python.org/dev/peps/pep-0429/
