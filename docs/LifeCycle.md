@@ -71,11 +71,10 @@ additions.
 
 ### Redis
 
-The last two [releases](http://redis.io/download) of redis should get all security fixes.  Still looking for a documented policy on this.
-
-* 2.6 - [2015-04-01](https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36) (redis 3.0.0 release date)
-* 2.8 - TBD (redis 3.2.0 release date)
-* 3.0 - TBD (redis 3.4.0 release date)
+* [Redis releases][25]
+* 2.6 EOL date: [2015-04-01][26] (redis 3.0.0 release date)
+* 2.8 expected EOL date: TBD (redis 3.2.0 release date)
+* 3.0 expected EOL date: TBD (redis 3.4.0 release date)
 
 [1]: https://access.redhat.com/support/policy/updates/errata/
 [2]: https://access.redhat.com/security/updates/backporting
@@ -101,3 +100,5 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 [22]: https://www.python.org/dev/peps/pep-0392/
 [23]: https://www.python.org/dev/peps/pep-0398/
 [24]: https://www.python.org/dev/peps/pep-0429/
+[25]: http://redis.io/download
+[26]: https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36
