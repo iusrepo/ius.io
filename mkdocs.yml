@@ -14,7 +14,6 @@ pages:
     - Philosophy: Philosophy.md
     - History: History.md
     - Packages: Packages.md
-    - SafeRepo: SafeRepo.md
   - Usage:
     - Getting Started: GettingStarted.md
     - Usage Guide: UsageGuide.md
@@ -22,4 +21,5 @@ pages:
     - Contributing: Contributing.md
     - Life Cycle: LifeCycle.md
     - Software Collections: IUSvsSCL.md
+    - SafeRepo: SafeRepo.md
     - FAQs: FAQs.md
