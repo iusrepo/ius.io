@@ -25,9 +25,12 @@ next major version.  Upgrading from foobar25u to foobar26u is a manual process,
 similar to upgrading from stock foobar.  Even when foobar 2.5 is declared EOL
 upstream, no automatic upgrade to foobar26u will take place.
 
-While not all projects have clear documentation about life cycle management
-here is some information we have been able to find. Please contact us with
-corrections or additions.
+## Upstream Policies and EOL Dates
+
+Below is information we have collected regarding various upstream projects EOL
+policies and relevant dates.  Not all projects have clear policies, so the
+level of detail varies between projects.  Please contact us with corrections or
+additions.
 
 ### PHP
 
