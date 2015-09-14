@@ -34,14 +34,14 @@ additions.
 
 ### PHP
 
-* http://php.net/supported-versions.php
-* http://php.net/eol.php
-* https://wiki.php.net/rfc/releaseprocess
-* http://en.wikipedia.org/wiki/PHP#Release_history
-* 5.3 - [2014-08-14](http://php.net/archive/2014.php#id2014-08-14-1)
-* 5.4 - 2015-09-14
-* 5.5 - 2016-06-20
-* 5.6 - 2017-08-28
+* [Supported Versions Table][3]
+* [EOL Versions Table][4]
+* [Release Process][5]
+* [Release History (Wikipedia)][6]
+* 5.3 EOL date: [2014-08-14][7]
+* 5.4 EOL date: [2015-09-14][8]
+* 5.5 expected EOL date: 2016-07-10
+* 5.6 expected EOL date: 2017-08-28
 
 ### MySQL
 
@@ -94,3 +94,9 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 
 [1]: https://access.redhat.com/support/policy/updates/errata/
 [2]: https://access.redhat.com/security/updates/backporting
+[3]: http://php.net/supported-versions.php
+[4]: http://php.net/eol.php
+[5]: https://wiki.php.net/rfc/releaseprocess
+[6]: http://en.wikipedia.org/wiki/PHP#Release_history
+[7]: http://php.net/archive/2014.php#id2014-08-14-1
+[8]: http://php.net/archive/2015.php#id2015-09-04-4
