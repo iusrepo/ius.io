@@ -4,6 +4,7 @@ strict: True
 include_next_prev: False
 theme: mkdocs
 theme_dir: theme
+repo_url: https://github.com/iuscommunity-pkg/
 markdown_extensions:
   - toc:
       permalink: True
