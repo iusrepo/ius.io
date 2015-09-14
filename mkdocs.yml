@@ -2,6 +2,8 @@ site_name: IUS
 copyright: Sponsered by <a href="https://www.rackspace.com">Rackspace</a>.
 strict: True
 include_next_prev: False
+theme: mkdocs
+theme_dir: theme
 markdown_extensions:
   - toc:
       permalink: True
