@@ -6,7 +6,7 @@ This article outlines a basic way of syncing with IUS. That said, you aren’t
 required to use these scripts or processes if you wish to write your own. The
 basics of it are:
 
-* Upstream Official Repository is rsync://dl.iuscommunity.org/ius
+* Upstream Official Repository is `rsync://dl.iuscommunity.org/ius`
 * The file named CURRENT in the root of the repo is generated at the end of
 every push. Therefore, you can automate syncing whenever this file changes
 from what you have locally.
