@@ -45,13 +45,13 @@ additions.
 
 ### MySQL
 
-* http://www.mysql.com/support/
-* http://www.mysql.com/support/supportedplatforms/database.html
-* http://en.wikipedia.org/wiki/MySQL#Versions
-* 5.0 - [2012-03-21](http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html)
-* 5.1 - [TBD](http://dev.mysql.com/doc/relnotes/mysql/5.1/en/)
-* 5.5 - [TBD](http://dev.mysql.com/doc/relnotes/mysql/5.5/en/)
-* 5.6 - [TBD](http://dev.mysql.com/doc/relnotes/mysql/5.6/en/)
+* [Oracle Premier and Extended Support][9]
+* [EOL Announcements][10]
+* [Release History (Wikipedia)][11]
+* 5.0 EOL date: [2012-03-21][12]
+* 5.1 expected EOL date: [2016-12-31][13]
+* 5.5 expected EOL date: [2018-12-03][14]
+* 5.6 expected EOL date: [2021-02-05][15]
 
 ### MariaDB
 
@@ -100,3 +100,10 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 [6]: http://en.wikipedia.org/wiki/PHP#Release_history
 [7]: http://php.net/archive/2014.php#id2014-08-14-1
 [8]: http://php.net/archive/2015.php#id2015-09-04-4
+[9]: http://www.mysql.com/support/
+[10]: http://www.mysql.com/support/eol-notice.html
+[11]: https://en.wikipedia.org/wiki/MySQL#Versions
+[12]: http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html
+[13]: http://dev.mysql.com/doc/relnotes/mysql/5.1/en/
+[14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
+[15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
