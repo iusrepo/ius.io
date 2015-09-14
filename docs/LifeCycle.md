@@ -7,18 +7,23 @@ CentOS.  Older point releases and other distributions based on RHEL may work,
 but with limited resource we focus efforts on our supported OSes.
 
 ## Package Life Cycle
-IUS packages work differently from Red Hat/CentOS packages when it comes
-life cycle management/EOL (end of life). Generally, Red Hat/CentOS will support
-and backport packages for the entire life span of the OS release, even if the
-upstream project has ended support for the version in question. IUS follows the
-upstream project.  When the project declares a version EOL, IUS will do the
-same and move the packages to the archive repositories.
+
+RHEL has a [10 year life cycle][1], during which time stock packages recieve
+[backported][2] security fixes.  These packages usually stay locked to a
+particular upstream version, regardless of whether that version is still
+supported by the upstream project.
+
+On the other hand, IUS packages follow their respective upstream version.  This
+is usually isoloated to a supported upstream branch (usually the major.minor
+version).  This makes it unnecessary to backport security fixes, since the
+latest upstream version typically contains fixes for all known vulnerabilities.
+Once the upstream project declares a version end of life (EOL), IUS moves the
+relevant packages from our stable repositories to our archive repositories.
 
 It is important to note that IUS packages will not automatically upgrade to the
-next major version. If The Foobar Project EOLs foobar 2.5, the IUS foobar25u
-package will not automatically get updated to foobar26u. This is done
-intentionally, as it is common for software to make change in major version
-that could introduce breakage.
+next major version.  Upgrading from foobar25u to foobar26u is a manual process,
+similar to upgrading from stock foobar.  Even when foobar 2.5 is declared EOL
+upstream, no automatic upgrade to foobar26u will take place.
 
 While not all projects have clear documentation about life cycle management
 here is some information we have been able to find. Please contact us with
@@ -83,3 +88,6 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 * 2.6 - [2015-04-01](https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36) (redis 3.0.0 release date)
 * 2.8 - TBD (redis 3.2.0 release date)
 * 3.0 - TBD (redis 3.4.0 release date)
+
+[1]: https://access.redhat.com/support/policy/updates/errata/
+[2]: https://access.redhat.com/security/updates/backporting
