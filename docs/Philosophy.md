@@ -32,9 +32,8 @@ the system but still utilize the latest PHP, Python, MySQL, and more.
 
 Updates for our existing packages are first released in the [testing
 repositories][5].  If no issues are reported after about two weeks, the updated
-packages will be promoted to the [stable repositories][6].  In some cases, such
-as critical security fixes, we will promote packages to the stable repositories
-sooner than two weeks.
+packages will be promoted to the [stable repositories][6].  Please note, we
+reserve the right to promote package sooner if warranted.
 
 This release policy does not not apply to new packages that have yet to be
 added to the stable repositories.  When a new package is requested, the
