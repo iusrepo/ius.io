@@ -1,6 +1,7 @@
 # Life Cycle
 
-## OS Life Cycle
+## Distibution Life Cycle
+
 IUS only supports the current base release for RHEL and CentOS.  Older point
 releases and other distributions based on Red Hat may work, but with limited
 resource we focus efforts on our supported OSes.
