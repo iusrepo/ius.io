@@ -55,7 +55,8 @@ additions.
 
 ### MariaDB
 
-[maintenance policy](https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/)
+* [Maintenance Policy][16]
+* 10.0 expected EOL date: 2019-03-31
 
 ### Python
 
@@ -107,3 +108,4 @@ The last two [releases](http://redis.io/download) of redis should get all securi
 [13]: http://dev.mysql.com/doc/relnotes/mysql/5.1/en/
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
+[16]: https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/
