@@ -16,7 +16,8 @@ from what you have locally.
 
 Before you can access the upstream rsync service, you must submit a request to
 have all downstream hosts added to our firewall. Send an email to
-coredev@iuscommunity.org:
+[coredev@iuscommunity.org][1] with the following information.
+
 ```
 Contact Name:
 Contact Email:
@@ -96,5 +97,6 @@ or Spacewalk instead of using a repository. The IUS team are not experts in
 these applications recommend using [⁠Red Hat Satellie][1] or [Spacewalk][2]
 documentation.
 
-[1]: https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/
-[2]: https://fedorahosted.org/spacewalk/wiki/UserDocs
+[1]: mailto:coredev@iuscommunity.org
+[2]: https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/
+[3]: https://fedorahosted.org/spacewalk/wiki/UserDocs
