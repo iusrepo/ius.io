@@ -18,7 +18,7 @@ Before you can access the upstream rsync service, you must submit a request to
 have all downstream hosts added to our firewall. Send an email to
 [coredev@iuscommunity.org][1] with the following information.
 
-```
+```text
 Contact Name:
 Contact Email:
 List of Downstream Mirror Hosts:
@@ -36,7 +36,7 @@ somewhere, and make it executable:
 
 /root/scripts/sync-ius.sh:
 
-``` bash
+```bash
 # check to make sure we arent' already running
 RES=$(ps -ef | grep "[/bin/bash] /root/scripts/sync-ius.sh" | wc -l)
 if [ $RES -gt 2 ]; then
@@ -74,7 +74,7 @@ It is a good idea to run the initial sync manually so that the hourly cronjob
 doesn’t try to run while we are syncing (though the script protects against
 it). Plus, it allows you to detect any issues that might come up:
 
-```
+```bash
 # /root/scripts/sync-ius.sh
 ```
 
@@ -86,7 +86,7 @@ flag to sync-ius.sh in your cron.
 
 /etc/cron.d/sync-ius:
 
-``` bash
+```bash
 1 * * * * root /root/scripts/sync-ius.sh --randomize >/dev/null 2>&1
 ```
 
