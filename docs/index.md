@@ -7,7 +7,7 @@ select software for Enterprise Linux distributions.
 
 ## Project Goals
 
-* Create high quality RPM packages for Red Hat Enterprise Linux (RHEL) and
+* Create high quality RPM packages for Red Hat® Enterprise Linux® (RHEL) and
   CentOS.
 * Promptly release updated RPM packages once new versions are released by the
   upstream developers.
