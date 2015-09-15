@@ -21,12 +21,14 @@ have all downstream hosts added to our firewall. Send an email to
 ```text
 Contact Name:
 Contact Email:
-List of Downstream Mirror Hosts:
-Path to 'ius' (i.e. /pub/ius):
-Protocols Supported (rsync, ftp, http):
 Public or Private Mirror:
+IPv4 addresses to allow:
+IPv6 addresses to allow:
+Content path (i.e. /pub/ius):
+Protocols Supported (rsync, ftp, http):
 IPs to whitelist for rsync access:
 ```
+
 ## Configuring Rsync
 
 The IUS Upstream Repository can be mirrored via rsync. The following is
