@@ -3,8 +3,8 @@
 ## Summary
 
 This article outlines a basic way of syncing with IUS. That said, you aren’t
-required to use these scripts or processes if you wish to write your own. The
-basics of it are:
+required to use these scripts or processes if you wish to write your own.  Here
+are the basic guidelines for syncing.
 
 * Upstream Official Repository is `rsync://dl.iuscommunity.org/ius`
 * The file named CURRENT in the root of the repo is generated at the end of
