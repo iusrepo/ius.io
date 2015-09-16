@@ -3082,8 +3082,7 @@ url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") for
     padding: 3px 20px;
     white-space: nowrap;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover {
     background-color: #2e2e2e;
     color: #fff;
     text-decoration: none;
@@ -4195,8 +4194,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a {
     color: #fff;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
     background-color: #2e2e2e;
     color: #fff;
 }
@@ -4234,8 +4232,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #fff;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     background-color: #2e2e2e;
     color: #fff;
 }
