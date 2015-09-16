@@ -77,7 +77,7 @@ It is a good idea to run the initial sync manually so that the hourly cronjob
 doesn’t try to run while we are syncing (though the script protects against
 it). Plus, it allows you to detect any issues that might come up:
 
-```bash
+```text
 /usr/local/bin/ius-sync
 ```
 
@@ -89,7 +89,7 @@ flag to sync-ius.sh in your cron.
 
 /etc/cron.d/sync-ius:
 
-```bash
+```text
 1 * * * * root /usr/local/bin/ius-sync --randomize &> /dev/null
 ```
 
