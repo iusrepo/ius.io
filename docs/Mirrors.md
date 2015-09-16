@@ -25,7 +25,7 @@ public or private mirror:
 IPv4 addresses to allow:
 IPv6 addresses to allow:
 content path (i.e. /pub/ius):
-protocols supported (http, https, ftp, rsync):
+public protocols supported (http, https, ftp, rsync):
 ```
 
 ## Configuring Rsync
