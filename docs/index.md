@@ -13,6 +13,12 @@ select software for Enterprise Linux distributions.
   upstream developers.
 * No automatic replacement of stock RPM packages.
 
+## How To Use
+
+After becoming familiar with our [philosophies][1], install the appropriate
+[release RPM][2] to enable our repository.  There are several valid methods for
+installing IUS packages; please refer to our [usage][3] guide for specifics.
+
 ## Contact Us
 
 Most of our development is done in [GitHub][2], so that is the best way to
@@ -27,6 +33,9 @@ Other contact methods:
 * [general mailing list][8]
 * [development mailing list][9]
 
+[1]: Philosophy.md
+[2]: GettingStarted.md
+[3]: Usage.md
 [2]: https://github.com
 [3]: https://github.com/iuscommunity-pkg
 [4]: https://github.com/iuscommunity
