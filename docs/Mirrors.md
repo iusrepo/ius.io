@@ -26,7 +26,6 @@ IPv4 addresses to allow:
 IPv6 addresses to allow:
 Content path (i.e. /pub/ius):
 Protocols Supported (rsync, ftp, http):
-IPs to whitelist for rsync access:
 ```
 
 ## Configuring Rsync
