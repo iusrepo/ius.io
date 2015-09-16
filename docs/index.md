@@ -13,11 +13,6 @@ select software for Enterprise Linux distributions.
   upstream developers.
 * No automatic replacement of stock RPM packages.
 
-## Available Packages
-
-We typically package the latest stable versions of PHP, Python, MySQL, and
-more.  A complete list can be found [here][1].
-
 ## Contact Us
 
 Most of our development is done in [GitHub][2], so that is the best way to
@@ -32,7 +27,6 @@ Other contact methods:
 * [general mailing list][8]
 * [development mailing list][9]
 
-[1]: Packages.md
 [2]: https://github.com
 [3]: https://github.com/iuscommunity-pkg
 [4]: https://github.com/iuscommunity
