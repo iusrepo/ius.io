@@ -3091,7 +3091,6 @@ url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") for
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-    background-color: #2e2e2e;
     color: #fff;
     outline: 0 none;
     text-decoration: none;
@@ -3617,7 +3616,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-    background-color: #eee;
     border-color: #347cb7;
 }
 .nav .nav-divider {
@@ -4182,7 +4180,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 }
 .navbar-default {
-    background-color: #2e2e2e;
     border-color: #347cb7;
 }
 .navbar-default .navbar-brand {
@@ -4206,7 +4203,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #2e2e2e;
     color: #fff;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -4232,7 +4228,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #2e2e2e;
     color: #fff;
 }
 @media (max-width: 767px) {
@@ -4247,7 +4242,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    background-color: #2e2e2e;
     color: #fff;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
