@@ -33,7 +33,7 @@ public protocols supported (http, https, ftp, rsync):
 The IUS Upstream Repository can be mirrored via rsync. The following is
 a preferred method as it allows mirrors to remain in sync hourly, but only
 pulling updates if there has been changes.  Copy the following script
-somewhere, and make it executable:
+somewhere, and make it executable.
 
 `/root/scripts/sync-ius.sh`
 
