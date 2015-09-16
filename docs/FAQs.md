@@ -156,7 +156,7 @@ to our packages)?  The answer we came up with to have separate repositories.
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
 [4]: IUSvsSCL.md
 [5]: Contributing.md
-[6]: UsageGuide.md#using-testing-repositories
+[6]: Usage.md#using-testing-repositories
 [7]: https://fedoraproject.org/wiki/Koji
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.4_Technical_Notes/RHEA-2013-0422.html
 [9]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.7_Technical_Notes/package-ImageMagick.html

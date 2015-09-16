@@ -13,9 +13,9 @@ pages:
     - 'Philosophy': Philosophy.md
     - 'History': History.md
     - 'Packages': Packages.md
-  - 'Usage':
+  - 'Guides':
     - 'Getting Started': GettingStarted.md
-    - 'Usage Guide': UsageGuide.md
+    - 'Usage': Usage.md
   - 'More Information':
     - 'Contributing': Contributing.md
     - 'Mirrors': Mirrors.md
