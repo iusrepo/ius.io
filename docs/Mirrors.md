@@ -35,7 +35,7 @@ a preferred method as it allows mirrors to remain in sync hourly, but only
 pulling updates if there has been changes.  Copy the following script
 somewhere, and make it executable:
 
-/root/scripts/sync-ius.sh:
+`/root/scripts/sync-ius.sh`
 
 ```bash
 # check to make sure we arent' already running
