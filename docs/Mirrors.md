@@ -19,13 +19,13 @@ have all downstream hosts added to our firewall. Send an email to
 [coredev@iuscommunity.org][1] with the following information.
 
 ```text
-Contact Name:
-Contact Email:
-Public or Private Mirror:
+contact name:
+contact email:
+public or private mirror:
 IPv4 addresses to allow:
 IPv6 addresses to allow:
-Content path (i.e. /pub/ius):
-Protocols Supported (http, https, ftp, rsync):
+content path (i.e. /pub/ius):
+protocols supported (http, https, ftp, rsync):
 ```
 
 ## Configuring Rsync
