@@ -10,18 +10,18 @@ markdown_extensions:
       permalink: True
 pages:
   - index.md
-  - About:
-    - Philosophy: Philosophy.md
-    - History: History.md
-    - Packages: Packages.md
-  - Usage:
-    - Getting Started: GettingStarted.md
-    - Usage Guide: UsageGuide.md
-  - More Information:
-    - Contributing: Contributing.md
-    - Mirrors: Mirrors.md
-    - Life Cycle: LifeCycle.md
-    - Software Collections: IUSvsSCL.md
-    - SafeRepo: SafeRepo.md
-    - Testimonials: Testimonials.md
-    - FAQs: FAQs.md
+  - 'About':
+    - 'Philosophy': Philosophy.md
+    - 'History': History.md
+    - 'Packages': Packages.md
+  - 'Usage':
+    - 'Getting Started': GettingStarted.md
+    - 'Usage Guide': UsageGuide.md
+  - 'More Information':
+    - 'Contributing': Contributing.md
+    - 'Mirrors': Mirrors.md
+    - 'Life Cycle': LifeCycle.md
+    - 'Software Collections': IUSvsSCL.md
+    - 'SafeRepo': SafeRepo.md
+    - 'Testimonials': Testimonials.md
+    - 'FAQs': FAQs.md
