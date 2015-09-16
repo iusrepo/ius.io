@@ -35,13 +35,13 @@ a preferred method as it allows mirrors to remain in sync hourly, but only
 pulling updates if there has been changes.  Copy the following script
 somewhere, and make it executable.
 
-`/root/scripts/sync-ius.sh`
+`/usr/local/bin/ius-sync`
 
 ```bash
 #!/bin/bash
 
 # check to make sure we aren't already running
-RES=$(ps -ef | grep "[/bin/bash] /root/scripts/sync-ius.sh" | wc -l)
+RES=$(ps -ef | grep "ius-sync" | wc -l)
 if [ $RES -gt 2 ]; then
     echo "IUS sync already running...."
     exit
@@ -78,7 +78,7 @@ doesn’t try to run while we are syncing (though the script protects against
 it). Plus, it allows you to detect any issues that might come up:
 
 ```bash
-# /root/scripts/sync-ius.sh
+/usr/local/bin/ius-sync
 ```
 
 ## Setting Up Cron
@@ -90,7 +90,7 @@ flag to sync-ius.sh in your cron.
 /etc/cron.d/sync-ius:
 
 ```bash
-1 * * * * root /root/scripts/sync-ius.sh --randomize >/dev/null 2>&1
+1 * * * * root /usr/local/bin/ius-sync --randomize &> /dev/null
 ```
 
 ## Custom IUS Red Hat Satellite/Spacewalk channel
