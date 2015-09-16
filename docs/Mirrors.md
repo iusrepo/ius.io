@@ -38,7 +38,7 @@ somewhere, and make it executable:
 `/root/scripts/sync-ius.sh`
 
 ```bash
-# check to make sure we arent' already running
+# check to make sure we aren't already running
 RES=$(ps -ef | grep "[/bin/bash] /root/scripts/sync-ius.sh" | wc -l)
 if [ $RES -gt 2 ]; then
     echo "IUS sync already running...."
