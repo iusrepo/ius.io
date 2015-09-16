@@ -21,26 +21,26 @@ installing IUS packages; please refer to our [usage][3] guide for specifics.
 
 ## Contact Us
 
-Most of our development is done in [GitHub][2], so that is the best way to
-reach us.  Our package sources can be found in the [iuscommunity-pkg][3]
+Most of our development is done in [GitHub][4], so that is the best way to
+reach us.  Our package sources can be found in the [iuscommunity-pkg][5]
 organization; issues for specific packages should be reported here.  We also
-have the [iuscommunity][4] organization for everything else, such as [the
-source for this website][5] and our [new package wishlist][6].
+have the [iuscommunity][6] organization for everything else, such as [the
+source for this website][7] and our [new package wishlist][8].
 
 Other contact methods:
 
-* `#iuscommunity` on [freenode][7]
-* [general mailing list][8]
-* [development mailing list][9]
+* `#iuscommunity` on [freenode][9]
+* [general mailing list][10]
+* [development mailing list][11]
 
 [1]: Philosophy.md
 [2]: GettingStarted.md
 [3]: Usage.md
-[2]: https://github.com
-[3]: https://github.com/iuscommunity-pkg
-[4]: https://github.com/iuscommunity
-[5]: https://github.com/iuscommunity/ius.io
-[6]: https://github.com/iuscommunity/wishlist
-[7]: https://freenode.net
-[8]: https://launchpad.net/~ius-community
-[9]: https://launchpad.net/~ius-coredev
+[4]: https://github.com
+[5]: https://github.com/iuscommunity-pkg
+[6]: https://github.com/iuscommunity
+[7]: https://github.com/iuscommunity/ius.io
+[8]: https://github.com/iuscommunity/wishlist
+[9]: https://freenode.net
+[10]: https://launchpad.net/~ius-community
+[11]: https://launchpad.net/~ius-coredev
