@@ -1,6 +1,6 @@
 # IUS Community Project
 
-> _**I**nline with **U**pstream **S**table_
+> **I**nline with **U**pstream **S**table
 
 IUS is a community project that provides RPM packages for newer versions of
 select software for Enterprise Linux distributions.
