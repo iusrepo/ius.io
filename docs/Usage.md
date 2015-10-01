@@ -73,11 +73,13 @@ yum shell
 > run
 ```
 
-IUS also maintains the [yum replace plugin][9] to simplify this process.
+IUS also maintains the [yum replace plugin][9] to simplify this process.  It is
+available in our repositories.
 
 [asciinema demo][10]
 
 ```bash
+yum install yum-plugin-replace
 yum replace php --replace-with php56u
 ```
 
