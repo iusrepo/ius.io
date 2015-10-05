@@ -37,34 +37,70 @@ available from the CentOS Extras repository (enabled by default) and will be
 pulled in as a dependency of ius-release automatically.
 
 RHEL users must follow the [EPEL documentation][4] and use one of the following
-links to get the correct release package.
+yum commands to get the correct release package.
 
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm][5]
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm][6]
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm][7]
+
+RHEL/CENTOS 5
+
+```sh
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
+```
+
+RHEL/CENTOS 6
+
+```sh
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+```
+
+RHEL/CENTOS 7
+
+```sh
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+```
+
 
 ### ius-release
 
 IUS compiles seperate packages for RHEL and CentOS.  Use one of the following
-links to get the correct release package.
+yum commands to get the correct release package.
 
-* [https://rhel5.iuscommunity.org/ius-release.rpm][8]
-* [https://rhel6.iuscommunity.org/ius-release.rpm][9]
-* [https://rhel7.iuscommunity.org/ius-release.rpm][10]
-* [https://centos5.iuscommunity.org/ius-release.rpm][11]
-* [https://centos6.iuscommunity.org/ius-release.rpm][12]
-* [https://centos7.iuscommunity.org/ius-release.rpm][13]
+RHEL 5
+
+```sh
+yum install https://rhel5.iuscommunity.org/ius-release.rpm
+```
+
+RHEL 6
+
+```sh
+yum install https://rhel6.iuscommunity.org/ius-release.rpm
+```
+RHEL 7
+
+```sh
+yum install https://rhel7.iuscommunity.org/ius-release.rpm
+```
+
+CENTOS 5
+
+```sh
+yum install https://centos5.iuscommunity.org/ius-release.rpm
+```
+
+CENTOS 6
+
+```sh
+yum install https://centos6.iuscommunity.org/ius-release.rpm
+```
+
+CENTOS 7
+
+```sh
+yum install https://centos7.iuscommunity.org/ius-release.rpm
+```
+
 
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
 [2]: Usage.md
 [3]: http://setup.ius.io
 [4]: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
-[5]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-[6]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-[7]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-[8]: https://rhel5.iuscommunity.org/ius-release.rpm
-[9]: https://rhel6.iuscommunity.org/ius-release.rpm
-[10]: https://rhel7.iuscommunity.org/ius-release.rpm
-[11]: https://centos5.iuscommunity.org/ius-release.rpm
-[12]: https://centos6.iuscommunity.org/ius-release.rpm
-[13]: https://centos7.iuscommunity.org/ius-release.rpm
