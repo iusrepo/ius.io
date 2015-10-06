@@ -57,7 +57,7 @@ links to get the correct release package.
 
 [1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
 [2]: Usage.md
-[3]: http://setup.ius.io
+[3]: https://setup.ius.io
 [4]: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
 [5]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
 [6]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
