@@ -15,7 +15,7 @@ risk with this approach; new upstream versions may introduce bugs that users of
 stock packages will never have to deal with.  That said, we stand behind the
 quality of our packages, and work hard to find and resolve issues before a
 packages are promoted to the stable repos.  IUS users are forfeiting a small
-part of the their system stability in order to get the new features they need.
+part of their system stability in order to get the new features they need.
 By using IUS packages, you implicitly agree to this trade off.  This risk can
 be largely mitigated by participating in [early testing][2] using a
 non-production environment.
