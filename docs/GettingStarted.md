@@ -1,12 +1,10 @@
 # Getting Started
 
-## End User Agreement
+## Disclaimers
 
 Before using any packages from the IUS Community repositories, you should first
 read our [End User Agreement][1].  Downloading, installing, or using our
 packages implies that you agree to these terms.
-
-## Usage Warning
 
 If you are new to IUS, please understand that our packages work a bit
 differently than you might expect.  If you are trying to directly upgrade from
