@@ -60,7 +60,8 @@ packages does not make you a Rackspace customer.
 
 #### What is the relationship between Rackspace and IUS?
 
-It is similar to the relationship between Red Hat and EPEL.
+IUS is sponsored by Rackspace, but is not a service of Rackspace.  It is
+similar to the relationship between Red Hat and EPEL.
 
 * $COMPANY sponsors $PROJECT via engineer man-hours, servers, and bandwidth.
 * The escalation path for $PROJECT packages is with $PROJECT, not with $COMPANY.
