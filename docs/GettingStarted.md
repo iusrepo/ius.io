@@ -7,9 +7,8 @@ read our [End User Agreement][1].  Downloading, installing, or using our
 packages implies that you agree to these terms.
 
 If you are new to IUS, please understand that our packages work a bit
-differently than you might expect.  If you are trying to directly upgrade from
-a stock package to an IUS package, it will probably fail.  Please see our
-[usage guide][2] for specific details.
+differently than you might expect.  Please see our [usage guide][2] for
+specific details.
 
 ## Subscribing to the IUS Repository
 
