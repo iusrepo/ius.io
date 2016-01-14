@@ -42,6 +42,7 @@ additions.
 * 5.4 EOL date: [2015-09-14][8]
 * 5.5 expected EOL date: 2016-07-10
 * 5.6 expected EOL date: 2018-12-31
+* 7.0 expected EOL date: 2018-12-03
 
 ### MySQL
 
