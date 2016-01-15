@@ -76,7 +76,7 @@ we had to [make a change][8].  David Strauss [suggested on our mailing list][9]
 that we add a "u" suffix to prevent the name conflict.  We liked the idea, and
 [proceeded with implementing it][10].  At the time, [we thought it would be a
 one-time fix][11].  In 2013, Red Hat released a product called [Software
-Collections][2] (RHSCL).  Some of the packages that were offered overlapped
+Collections][12] (RHSCL).  Some of the packages that were offered overlapped
 with IUS packages.  We were concerned that we would face more package name
 conflicts, but were relieved to hear that RHSCL would not be enabled by
 default.  However, Red Hat later decided to add the mysql55 SCL packages to the
@@ -98,3 +98,4 @@ again.
 [9]: https://lists.launchpad.net/ius-community/msg00151.html
 [10]: https://bugs.launchpad.net/ius/+bug/691755
 [11]: https://lists.launchpad.net/ius-community/msg00152.html
+[12]: https://developerblog.redhat.com/2013/09/12/rhscl1-ga/
