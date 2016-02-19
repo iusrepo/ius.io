@@ -13,7 +13,7 @@ fundamentally different from their stock counterparts.  Our packages track the
 latest upstream versions of their respective software.  There is an inherent
 risk with this approach; new upstream versions may introduce bugs that users of
 stock packages will never have to deal with.  That said, we stand behind the
-quality of our packages, and work hard to find and resolve issues before a
+quality of our packages, and work hard to find and resolve issues before
 packages are promoted to the stable repos.  IUS users are forfeiting a small
 part of their system stability in order to get the new features they need.  By
 using IUS packages, you implicitly agree to this trade off.  This risk can be
