@@ -67,7 +67,7 @@ and have no guarantees.  Please see this [mailing list post][7].
 
 ## FAQ
 
-Q. On EL5 I see multiple packages that see to be related to MySQL 5.5, such as
+Q. On EL5 I see multiple packages that seem to be related to MySQL 5.5, such as
 mysql55, mysql55-server, and mysql55-mysql-server.  What is the difference?
 
 A. The IUS package for MySQL 5.5 is named mysql55, and it has several
