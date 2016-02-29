@@ -50,8 +50,8 @@ it and recommend all users switch back to the stock OpenSSL packages.
 
 When the IUS project first started, [LaunchPad][9] was the best location for
 version control, bugs and mailing lists. Unfortunately, LaunchPad is starting
-to show its age and thus we switched to GitHub for version control and
-bugs/issues. We still use LaunchPad for our mailing lists.
+to show its age and thus we switched to GitHub for version control,
+announcements, and bugs/issues.
 
 
 [1]: https://www.rackspace.com

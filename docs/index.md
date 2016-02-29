@@ -25,13 +25,9 @@ Most of our development is done in [GitHub][4], so that is the best way to
 reach us.  Our package sources can be found in the [iuscommunity-pkg][5]
 organization; issues for specific packages should be reported here.  We also
 have the [iuscommunity][6] organization for everything else, such as [the
-source for this website][7] and our [new package wishlist][8].
-
-Other contact methods:
-
-* `#iuscommunity` on [freenode][9]
-* [general mailing list][10]
-* [development mailing list][11]
+source for this website][7], [important announcements][8](like an announce
+mailing list), and our [new package wishlist][9].  We can also be found in
+`#iuscommunity` on [freenode][10].
 
 [1]: Philosophy.md
 [2]: GettingStarted.md
@@ -40,7 +36,6 @@ Other contact methods:
 [5]: https://github.com/iuscommunity-pkg
 [6]: https://github.com/iuscommunity
 [7]: https://github.com/iuscommunity/ius.io
-[8]: https://github.com/iuscommunity/wishlist
-[9]: https://freenode.net
-[10]: https://launchpad.net/~ius-community
-[11]: https://launchpad.net/~ius-coredev
+[8]: https://github.com/iuscommunity/announce
+[9]: https://github.com/iuscommunity/wishlist
+[10]: https://freenode.net
