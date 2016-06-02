@@ -69,7 +69,7 @@ additions.
 * 3.1 EOL date: [2012-06-27][21]
 * 3.2 expected EOL date: [2016-02-20][22]
 * 3.3 expected EOL date: [2017-09-29][23]
-* 3.4 expected EOL date: [TBD][24]
+* 3.4 expected EOL date: [2019-03-16][pep-0429]
 
 ### Redis
 
@@ -99,8 +99,8 @@ additions.
 [21]: https://www.python.org/download/releases/3.1.5/
 [22]: https://www.python.org/dev/peps/pep-0392/
 [23]: https://www.python.org/dev/peps/pep-0398/
-[24]: https://www.python.org/dev/peps/pep-0429/
 [25]: http://redis.io/download
 [26]: https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36
 
 [mysql-eol]: http://www.mysql.com/support/eol-notice.html
+[pep-0429]: https://www.python.org/dev/peps/pep-0429/
