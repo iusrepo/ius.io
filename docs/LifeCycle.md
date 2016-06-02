@@ -50,7 +50,7 @@ additions.
 * [EOL Announcements][10]
 * [Release History (Wikipedia)][11]
 * 5.0 EOL date: [2012-03-21][12]
-* 5.1 expected EOL date: [2016-12-31][13]
+* 5.1 EOL date: [2013-12-31][mysql-eol]
 * 5.5 expected EOL date: [2018-12-03][14]
 * 5.6 expected EOL date: [2021-02-05][15]
 
@@ -89,7 +89,6 @@ additions.
 [10]: http://www.mysql.com/support/eol-notice.html
 [11]: https://en.wikipedia.org/wiki/MySQL#Versions
 [12]: https://web.archive.org/web/20160507163310/http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html
-[13]: http://dev.mysql.com/doc/relnotes/mysql/5.1/en/
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
 [16]: https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/
@@ -103,3 +102,5 @@ additions.
 [24]: https://www.python.org/dev/peps/pep-0429/
 [25]: http://redis.io/download
 [26]: https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36
+
+[mysql-eol]: http://www.mysql.com/support/eol-notice.html
