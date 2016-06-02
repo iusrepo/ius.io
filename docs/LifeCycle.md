@@ -76,7 +76,7 @@ additions.
 
 * [Redis releases][redis-downloads]
 * 2.6 EOL date: [2015-04-01][redis-3.0.0] (redis 3.0.0 release date)
-* 2.8 expected EOL date: TBD (redis 3.2.0 release date)
+* 2.8 EOL date: [2016-05-06][redis-3.2.0] (redis 3.2.0 release date)
 * 3.0 expected EOL date: TBD (redis 3.4.0 release date)
 
 [1]: https://access.redhat.com/support/policy/updates/errata/
@@ -106,3 +106,4 @@ additions.
 [pep-0478]: https://www.python.org/dev/peps/pep-0478/
 [redis-downloads]: http://redis.io/download
 [redis-3.0.0]: https://github.com/antirez/redis/blob/3.0.0/00-RELEASENOTES#L15
+[redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
