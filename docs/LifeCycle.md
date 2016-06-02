@@ -53,6 +53,7 @@ additions.
 * 5.1 EOL date: [2013-12-31][mysql-eol]
 * 5.5 expected EOL date: [2018-12-03][14]
 * 5.6 expected EOL date: [2021-02-05][15]
+* 5.7 expected EOL date: [2020-10-21][mysql-5.7]
 
 ### MariaDB
 
@@ -103,6 +104,7 @@ additions.
 [23]: https://www.python.org/dev/peps/pep-0398/
 
 [mysql-eol]: http://www.mysql.com/support/eol-notice.html
+[mysql-5.7]: https://dev.mysql.com/doc/relnotes/mysql/5.7/en/
 [pep-0429]: https://www.python.org/dev/peps/pep-0429/
 [pep-0478]: https://www.python.org/dev/peps/pep-0478/
 [redis-downloads]: http://redis.io/download
