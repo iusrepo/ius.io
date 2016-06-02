@@ -78,6 +78,7 @@ additions.
 * 2.6 EOL date: [2015-04-01][redis-3.0.0] (redis 3.0.0 release date)
 * 2.8 EOL date: [2016-05-06][redis-3.2.0] (redis 3.2.0 release date)
 * 3.0 expected EOL date: TBD (redis 3.4.0 release date)
+* 3.2 expected EOL date: TBD (redis 3.6.0 release date)
 
 [1]: https://access.redhat.com/support/policy/updates/errata/
 [2]: https://access.redhat.com/security/updates/backporting
