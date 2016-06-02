@@ -88,7 +88,7 @@ additions.
 [9]: http://www.mysql.com/support/
 [10]: http://www.mysql.com/support/eol-notice.html
 [11]: https://en.wikipedia.org/wiki/MySQL#Versions
-[12]: http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html
+[12]: https://web.archive.org/web/20160507163310/http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html
 [13]: http://dev.mysql.com/doc/relnotes/mysql/5.1/en/
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
