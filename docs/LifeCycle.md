@@ -70,6 +70,7 @@ additions.
 * 3.2 expected EOL date: [2016-02-20][22]
 * 3.3 expected EOL date: [2017-09-29][23]
 * 3.4 expected EOL date: [2019-03-16][pep-0429]
+* 3.5 expected EOL date: [2020-09-13][pep-0478]
 
 ### Redis
 
@@ -104,3 +105,4 @@ additions.
 
 [mysql-eol]: http://www.mysql.com/support/eol-notice.html
 [pep-0429]: https://www.python.org/dev/peps/pep-0429/
+[pep-0478]: https://www.python.org/dev/peps/pep-0478/
