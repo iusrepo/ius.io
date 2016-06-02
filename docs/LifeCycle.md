@@ -75,7 +75,7 @@ additions.
 ### Redis
 
 * [Redis releases][redis-downloads]
-* 2.6 EOL date: [2015-04-01][26] (redis 3.0.0 release date)
+* 2.6 EOL date: [2015-04-01][redis-3.0.0] (redis 3.0.0 release date)
 * 2.8 expected EOL date: TBD (redis 3.2.0 release date)
 * 3.0 expected EOL date: TBD (redis 3.4.0 release date)
 
@@ -100,9 +100,9 @@ additions.
 [21]: https://www.python.org/download/releases/3.1.5/
 [22]: https://www.python.org/dev/peps/pep-0392/
 [23]: https://www.python.org/dev/peps/pep-0398/
-[26]: https://github.com/antirez/redis/blob/7ae1d4d6f50fa627a32eee261743d41d64a13e96/00-RELEASENOTES#L36
 
 [mysql-eol]: http://www.mysql.com/support/eol-notice.html
 [pep-0429]: https://www.python.org/dev/peps/pep-0429/
 [pep-0478]: https://www.python.org/dev/peps/pep-0478/
 [redis-downloads]: http://redis.io/download
+[redis-3.0.0]: https://github.com/antirez/redis/blob/3.0.0/00-RELEASENOTES#L15
