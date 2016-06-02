@@ -58,6 +58,7 @@ additions.
 
 * [Maintenance Policy][16]
 * 10.0 expected EOL date: 2019-03-31
+* 10.1 expected EOL date: 2020-10-17
 
 ### Python
 
