@@ -49,7 +49,7 @@ additions.
 * [Oracle Premier and Extended Support][9]
 * [EOL Announcements][10]
 * [Release History (Wikipedia)][11]
-* 5.0 EOL date: [2012-03-21][12]
+* 5.0 EOL date: [2012-01-09][mysql-eol]
 * 5.1 EOL date: [2013-12-31][mysql-eol]
 * 5.5 expected EOL date: [2018-12-03][14]
 * 5.6 expected EOL date: [2021-02-05][15]
@@ -88,7 +88,6 @@ additions.
 [9]: http://www.mysql.com/support/
 [10]: http://www.mysql.com/support/eol-notice.html
 [11]: https://en.wikipedia.org/wiki/MySQL#Versions
-[12]: https://web.archive.org/web/20160507163310/http://dev.mysql.com/doc/relnotes/mysql/5.0/en/news-5-0-96.html
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
 [16]: https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/
