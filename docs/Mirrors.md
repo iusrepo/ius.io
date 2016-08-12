@@ -12,22 +12,6 @@ every push. Therefore, you can automate syncing whenever this file changes
 from what you have locally.
 * Syncs should be done as near to the time that CURRENT changes as possible.
 
-## Submitting a Request to IUS Core Development
-
-Before you can access the upstream rsync service, you must submit a request to
-have all downstream hosts added to our firewall. Send an email to
-[coredev@iuscommunity.org][1] with the following information.
-
-```text
-contact name:
-contact email:
-public or private mirror:
-IPv4 addresses to allow:
-IPv6 addresses to allow:
-content path (i.e. /pub/ius):
-public protocols supported (http, https, ftp, rsync):
-```
-
 ## Configuring Rsync
 
 The IUS Upstream Repository can be mirrored via rsync. The following is
@@ -97,9 +81,23 @@ flag to sync-ius.sh in your cron.
 
 We have heard some people using a custom IUS channel within Red Hat Satellite
 or Spacewalk instead of using a repository. The IUS team are not experts in
-these applications recommend using [⁠Red Hat Satelltie][2] or [Spacewalk][3]
+these applications recommend using [⁠Red Hat Satelltie][1] or [Spacewalk][2]
 documentation.
 
-[1]: mailto:coredev@iuscommunity.org
-[2]: https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/
-[3]: https://fedorahosted.org/spacewalk/wiki/UserDocs
+## Become an Official IUS Public Mirror
+
+Send an email to [coredev@iuscommunity.org][3] with the following information
+and we will get you added to [our Umirr instance][4].
+
+```text
+contact name:
+contact email:
+domain name:
+content path (i.e. /pub/ius):
+public protocols supported (http, https, ftp, rsync):
+```
+
+[1]: https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/
+[2]: https://fedorahosted.org/spacewalk/wiki/UserDocs
+[3]: mailto:coredev@iuscommunity.org
+[4]: Tools.md#umirr
