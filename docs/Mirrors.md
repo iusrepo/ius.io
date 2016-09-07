@@ -81,7 +81,7 @@ flag to sync-ius.sh in your cron.
 
 We have heard some people using a custom IUS channel within Red Hat Satellite
 or Spacewalk instead of using a repository. The IUS team are not experts in
-these applications recommend using [⁠Red Hat Satelltie][1] or [Spacewalk][2]
+these applications recommend using [Red Hat Satellite][1] or [Spacewalk][2]
 documentation.
 
 ## Become an Official IUS Public Mirror
