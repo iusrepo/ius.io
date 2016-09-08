@@ -81,6 +81,11 @@ additions.
 * 3.0 expected EOL date: TBD (3.4.0 release date)
 * 3.2 expected EOL date: TBD (3.6.0 release date)
 
+### HAProxy
+
+* Based on the project's [homepage][haproxy-description], the three most recent versions are maintained.
+* 1.6 expected EOL date: TBD (1.9.0 release date)
+
 [1]: https://access.redhat.com/support/policy/updates/errata/
 [2]: https://access.redhat.com/security/updates/backporting
 [3]: http://php.net/supported-versions.php
@@ -110,3 +115,4 @@ additions.
 [redis-downloads]: http://redis.io/download
 [redis-3.0.0]: https://github.com/antirez/redis/blob/3.0.0/00-RELEASENOTES#L15
 [redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
+[haproxy-description]: http://www.haproxy.org/#desc
