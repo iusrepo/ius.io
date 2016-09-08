@@ -40,7 +40,7 @@ additions.
 * [Release History (Wikipedia)][6]
 * 5.3 EOL date: [2014-08-14][7]
 * 5.4 EOL date: [2015-09-14][8]
-* 5.5 expected EOL date: 2016-07-10
+* 5.5 EOL date: [2016-07-21][php-5.5-eol]
 * 5.6 expected EOL date: 2018-12-31
 * 7.0 expected EOL date: 2018-12-03
 
@@ -116,3 +116,4 @@ additions.
 [redis-3.0.0]: https://github.com/antirez/redis/blob/3.0.0/00-RELEASENOTES#L15
 [redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
 [haproxy-description]: http://www.haproxy.org/#desc
+[php-5.5-eol]: http://php.net/archive/2016.php#id2016-07-21-2
