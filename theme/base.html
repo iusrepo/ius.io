@@ -53,7 +53,10 @@
             {% if copyright %}
                 <center>{{ copyright }}</center>
             {% endif %}
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <center>
+              Sponsored by <a href="https://www.rackspace.com">Rackspace</a>.
+              Site built with <a href="http://www.mkdocs.org/">MkDocs</a> on {{ build_date_utc.strftime('%Y-%m-%d') }}.
+            </center>
         </footer>
 
         <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>
