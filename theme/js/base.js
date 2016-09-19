@@ -34,10 +34,6 @@ $( document ).ready(function() {
 });
 
 
-$('body').scrollspy({
-    target: '.bs-sidebar',
-});
-
 /* Toggle the `clicky` class on the body when clicking links to let us
    retrigger CSS animations. See ../css/base.css for more details. */
 $('a').click(function(e) {
