@@ -7,14 +7,15 @@
         {% if page_description %}<meta name="description" content="{{ page_description }}">{% endif %}
         {% if site_author %}<meta name="author" content="{{ site_author }}">{% endif %}
         {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
-        <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
+        {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
+        {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
 
 	<title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
-        <link href="{{ base_url }}/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="{{ base_url }}/css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="{{ base_url }}/css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">
+        <link href="{{ base_url }}/css/base.css" rel="stylesheet">
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
         {%- endfor %}
@@ -38,23 +39,24 @@
         {% endif %}
     </head>
 
-    <body{% if current_page and current_page.is_homepage %} class="homepage"{% endif %}>
+    <body>
 
         {% include "nav.html" %}
 
         <div class="container">
-            {% block content %}
-                <div class="col-md-3">{% include "toc.html" %}</div>
-                <div class="col-md-9" role="main">{% include "content.html" %}</div>
-            {% endblock %}
+            <div class="col-md-3">{% include "toc.html" %}</div>
+            <div class="col-md-9" role="main">{% include "content.html" %}</div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             {% if copyright %}
-                <p>{{ copyright }}</p>
+                <center>{{ copyright }}</center>
             {% endif %}
-            <p>Sponsored by <a href="https://www.rackspace.com">Rackspace</a>. Site built with <a href="http://www.mkdocs.org/">MkDocs</a> on {{ build_date_utc.strftime('%Y-%m-%d') }}.</p>
+            <center>
+              Sponsored by <a href="https://www.rackspace.com">Rackspace</a>.
+              Site built with <a href="http://www.mkdocs.org/">MkDocs</a> on {{ build_date_utc.strftime('%Y-%m-%d') }}.
+            </center>
         </footer>
 
         <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>
@@ -91,12 +93,5 @@
                 </div>
             </div>
         </div>
-
     </body>
 </html>
-{% if current_page and current_page.is_homepage %}
-<!--
-MkDocs version : {{ mkdocs_version }}
-Build Date UTC : {{ build_date_utc }}
--->
-{% endif %}
