@@ -153,6 +153,49 @@ how can we make sure that our packages will work on both Red Hat and CentOS
 during the gap between Red Hat and CentOS point releases (that requires updates
 to our packages)?  The answer we came up with to have separate repositories.
 
+### php
+
+#### I want to use Nginx with php-fpm, but when I install php it pulls in httpd as a dependency.  Why?
+
+The PHP language is actually in the php56u-common package.  The php56u package
+is mod\_php, an httpd module that serves as a PHP SAPI (server API).  Yes, the
+naming is less than ideal, but it's something we inherited from Fedora/RHEL.
+
+#### Why can't I install php56u with httpd24u?
+
+As noted in the previous question, php56u is actually the mod\_php httpd
+module.  It compiles against the MMN (magic module number) of httpd.  This
+means that if you build mod\_php against httpd 2.2, it can only install with
+httpd 2.2.  When we created httpd24u, [we decided to continue building our
+mod\_php packages against stock httpd][mod_php_decision].  Building mod\_php
+for every combination of php and httpd was far more complexity than we were
+willing to maintain.  Additionally, there was no way to trigger automatic
+updates for users to switch from php56u/httpd to php56u/httpd24u.  In order to
+use httpd24u with PHP 5.6, you must use php56u-fpm. The FPM SAPI does not
+compile against a specific webserver, so you can use it with httpd, nginx,
+lighttpd, and more.
+
+#### I don't see php70u in the repos, where is it?
+
+To address the mod\_php naming confusion in our PHP 7.0 packages, we chose to
+move the mod\_php files into a subpackage named mod\_php70u.  This means that
+you should explicitly choose php70u-fpm or mod\_php70u. mod\_php70u still
+provides php70u, so running `yum install php70u` still works.
+
+#### I'm trying to install phpMyAdmin, but yum is failing with errors from IUS packages.  Why?
+
+IUS packages usually work just fine with noarch stock and EPEL PHP packages,
+but yum's dependency resolution is not always smart enough to pull in all the
+correct dependencies.  You can work through this by installing the IUS PHP
+packages that phpMyAdmin requires before trying to install phpMyAdmin itself.
+Alternatively, you can install dnf on EL7 via [COPR][dnf_copr], which has much
+better dependency resolution capabilities.  That would allow you to run `dnf
+install phpMyAdmin php70u-common` and have everything resolve the first time.
+
+#### I'm trying to install composer, but yum is failing with errors from IUS packages.  Why?
+
+See the previous question regarding phpMyAdmin.
+
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
 [4]: IUSvsSCL.md
@@ -164,4 +207,5 @@ to our packages)?  The answer we came up with to have separate repositories.
 [10]: https://launchpad.net/~ius-community
 [11]: History.md#launchpad
 
-
+[mod_php_decision]: https://lists.launchpad.net/ius-community/msg01277.html
+[dnf_copr]: https://copr.fedorainfracloud.org/coprs/g/rpm-software-management/dnf-stack-el7/
