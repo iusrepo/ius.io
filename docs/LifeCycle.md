@@ -2,9 +2,10 @@
 
 ## Distibution Life Cycle
 
-IUS only supports the current base release for Red Hat Enterprise Linux and
-CentOS.  Older point releases and other distributions based on RHEL may work,
-but with limited resource we focus efforts on our supported OSes.
+IUS only builds packages for [current versions][current] of Red Hat Enterprise
+Linux and CentOS.  This does not include [extended life cycle
+options][extended] from Red Hat.  New package requests will no longer be
+accepted once Production 3 Phase starts.
 
 ## Package Life Cycle
 
@@ -117,3 +118,5 @@ additions.
 [redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
 [haproxy-description]: http://www.haproxy.org/#desc
 [php-5.5-eol]: http://php.net/archive/2016.php#id2016-07-21-2
+[current]: https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates
+[extended]: https://access.redhat.com/support/policy/updates/errata/#Extended_Life_Cycle_Phase
