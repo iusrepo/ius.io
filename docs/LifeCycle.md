@@ -2,12 +2,10 @@
 
 ## Distibution Life Cycle
 
-IUS will support a major version of Red Hat Enterprise Linux and CentOS until the
-end of Red Hat's [production 3 phase][0].  New package requests will no longer
-be taken when production 3 phase starts.  Within a major version, we will only
-support the current minor release.  Note, older minor releases and other
-distributions based on RHEL may work, but with limited resources we focus
-efforts on our supported OSes.
+IUS only builds packages for [current versions][current] of Red Hat Enterprise
+Linux and CentOS.  This does not include [extended life cycle
+options][extended] from Red Hat.  New package requests will no longer be
+accepted once Production 3 Phase starts.
 
 ## Package Life Cycle
 
@@ -89,7 +87,6 @@ additions.
 * Based on the project's [homepage][haproxy-description], the three most recent versions are maintained.
 * 1.6 expected EOL date: TBD (1.9.0 release date)
 
-[0]: https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates
 [1]: https://access.redhat.com/support/policy/updates/errata/
 [2]: https://access.redhat.com/security/updates/backporting
 [3]: http://php.net/supported-versions.php
@@ -121,3 +118,5 @@ additions.
 [redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
 [haproxy-description]: http://www.haproxy.org/#desc
 [php-5.5-eol]: http://php.net/archive/2016.php#id2016-07-21-2
+[current]: https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates
+[extended]: https://access.redhat.com/support/policy/updates/errata/#Extended_Life_Cycle_Phase
