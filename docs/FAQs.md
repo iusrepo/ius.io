@@ -186,15 +186,27 @@ provides php70u, so running `yum install php70u` still works.
 
 IUS packages usually work just fine with noarch stock and EPEL PHP packages,
 but yum's dependency resolution is not always smart enough to pull in all the
-correct dependencies.  You can work through this by installing the IUS PHP
-packages that phpMyAdmin requires before trying to install phpMyAdmin itself.
-Alternatively, you can install dnf on EL7 via [COPR][dnf_copr], which has much
-better dependency resolution capabilities.  That would allow you to run `dnf
-install phpMyAdmin php70u-common` and have everything resolve the first time.
+correct dependencies.  You can work around this by explictly requesting a few
+more package names to help the transaction resolve successfully.
+
+* `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy}`
+* `yum install phpMyAdmin php70u-{bcmath,cli,common,process,tidy}`
+
+Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
+better dependency resolution capabilities.  That allows for a much easier
+installation.
+
+* `dnf install phpMyAdmin php56u-common`
+* `dnf install phpMyAdmin php70u-common`
 
 #### I'm trying to install composer, but yum is failing with errors from IUS packages.  Why?
 
 See the previous question regarding phpMyAdmin.
+
+* `yum install composer php56u-{common,cli,gd,intl,mbstring,pdo,pecl-jsonc,process,xml}`
+* `yum install composer php70u-{common,gd,pdo,process}`
+* `dnf install composer php56u-common`
+* `dnf install composer php70u-common`
 
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
