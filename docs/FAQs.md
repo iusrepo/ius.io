@@ -153,7 +153,7 @@ how can we make sure that our packages will work on both Red Hat and CentOS
 during the gap between Red Hat and CentOS point releases (that requires updates
 to our packages)?  The answer we came up with to have separate repositories.
 
-### php
+### PHP
 
 #### I want to use Nginx with php-fpm, but when I install php it pulls in httpd as a dependency.  Why?
 
