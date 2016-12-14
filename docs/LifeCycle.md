@@ -44,6 +44,7 @@ additions.
 * 5.5 EOL date: [2016-07-21][php-5.5-eol]
 * 5.6 expected EOL date: 2018-12-31
 * 7.0 expected EOL date: 2018-12-03
+* 7.1 expected EOL date: 2019-12-01
 
 ### MySQL
 
