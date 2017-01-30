@@ -93,7 +93,7 @@ configuration of the repository you do not want to use.  Please refer to the
 * [RHSCL Update Policy][13]
 
 [1]: https://www.redhat.com/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-platform-with-latest-versions-of-popular-programming-languages-and-databases
-[2]: https://developerblog.redhat.com/announcing-softwarecollections-org/
+[2]: https://developerblog.redhat.com/2014/04/08/announcing-softwarecollections-org/
 [3]: SafeRepo.md#safe-replacement-package
 [4]: SafeRepo.md#parallel-installable-package
 [5]: https://access.redhat.com/support/policy/updates/rhscl/
