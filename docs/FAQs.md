@@ -38,10 +38,10 @@ See [Naming Convention][2].
 We would recommend using our Red Hat repositories for these OSes since they are
 based on RHEL and not CentOS.
 
-#### Why are mysqlclient15 and mysqlclient16 such an old version?
+#### Why is mysqlclient16 such an old version?
 
-Our mysqlclient15 and mysqlclient16 package provide the stock version of
-libmysqlclient, so stock package can interact with our msyql-server packages.
+Our mysqlclient16 package provide the stock version of libmysqlclient, so stock
+package can interact with our msyql-server packages.
 
 #### Can IUS be used with DNF?
 
