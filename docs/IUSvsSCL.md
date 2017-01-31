@@ -65,24 +65,15 @@ years.  Major updates are grouped together and released as a new collection.
 * Software Collections from [softwarecollections.org][6] are community driven
 and have no guarantees.  Please see this [mailing list post][7].
 
-## FAQ
+## SCL in base repositories
 
-Q. On EL5 I see multiple packages that seem to be related to MySQL 5.5, such as
-mysql55, mysql55-server, and mysql55-mysql-server.  What is the difference?
-
-A. The IUS package for MySQL 5.5 is named mysql55, and it has several
-subpackages that follow the pattern mysql55-_component_ (mysql55-server,
-mysql55-libs, etc).  While RHSCL is not available for RHEL 5, Red Hat did add
-their mysql55 SCL to the EL5 base channel.  This is a problem because the main
-SCL metapackage is also named mysql55.  The SCL subpackages follow the pattern
-mysql55-mysql-_component_ (mysql55-mysql-server, mysql55-mysql-libs, etc).  We
-evaluated renaming our mysql55 package to mysql55u to avoid the name conflict
-with the SCL metapackage, but we were not able to find a solution that provided
-seamless upgrades.  While our current understanding is that the SCL metapackage
-is optional, it is still an unfortunate conflict with no clear solution.  The
-safest approach to handle this is to add the line `exclude=mysql55*` to the
-configuration of the repository you do not want to use.  Please refer to the
-[RHEL 5 MySQL 5.5 migration guide][8] for more information.
+Generally, users have to go out of their way to use SCL packages. Subscribing
+to a RHSCL channel or installing the centos-release-scl package are needed to
+access SCL packages. An exception occurred when Red Hat released [MySQL SCL
+packages into the 5.10 base channel][8]. While this appears to be an isolated
+case, it important to note this occurred and it is not clear if Red Hat will do
+this again. For IUS users, this created confusion as there was a mysql55
+package in both the base channel and IUS repository.
 
 ## More Info
 
@@ -99,7 +90,7 @@ configuration of the repository you do not want to use.  Please refer to the
 [5]: https://access.redhat.com/support/policy/updates/rhscl/
 [6]: https://www.softwarecollections.org
 [7]: https://www.redhat.com/archives/sclorg/2014-November/msg00005.html
-[8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Deployment_Guide/ch-Migrating_from_MySQL_5.0_to_MySQL_5.5.html
+[8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/5.10_Release_Notes/general_updates.html
 [9]: https://www.softwarecollections.org
 [10]: https://www.redhat.com/about/news/archive/2013/6/red-hat-software-collections-1.0-beta-now-available
 [11]: https://developerblog.redhat.com/2013/09/12/rhscl1-ga/
