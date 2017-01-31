@@ -40,7 +40,7 @@ based on RHEL and not CentOS.
 
 #### Why is mysqlclient16 such an old version?
 
-Our mysqlclient16 package provide the stock version of libmysqlclient, so stock
+Our mysqlclient16 package provides the stock version of libmysqlclient, so stock
 package can interact with our msyql-server packages.
 
 #### Can IUS be used with DNF?
