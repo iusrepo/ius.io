@@ -3,11 +3,11 @@
 ## Disclaimers
 
 Before using any packages from the IUS Community repositories, you should first
-read our [End User Agreement][1].  Downloading, installing, or using our
+read our [End User Agreement][EUA].  Downloading, installing, or using our
 packages implies that you agree to these terms.
 
 If you are new to IUS, please understand that our packages work a bit
-differently than you might expect.  Please see our [usage guide][2] for
+differently than you might expect.  Please see our [usage guide][usage] for
 specific details.
 
 ## Subscribing to the IUS Repository
@@ -23,8 +23,8 @@ several IUS packages have dependencies from EPEL.
 ## Install via Automation
 
 Automation examples are available at the [automation-examples github
-repository][3].  We also have the bash script from that repository available at
-[setup.ius.io][4].
+repository][automation].  We also have the bash script from that repository
+available at [setup.ius.io][setup].
 
 ## Manual Install
 
@@ -34,36 +34,30 @@ If you are using CentOS, you can skip this step.  The epel-release package is
 available from the CentOS Extras repository (enabled by default) and will be
 pulled in as a dependency of ius-release automatically.
 
-RHEL users must follow the [EPEL documentation][5] and use one of the following
-links to get the correct release package.
+RHEL users must follow the [EPEL documentation][EPEL_dcos] and use one of the
+following links to get the correct release package.
 
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm][6]
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm][7]
-* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm][8]
+* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm][EPEL6]
+* [https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm][EPEL7]
 
 ### ius-release
 
 IUS compiles seperate packages for RHEL and CentOS.  Use one of the following
 links to get the correct release package.
 
-* [https://rhel5.iuscommunity.org/ius-release.rpm][9]
-* [https://rhel6.iuscommunity.org/ius-release.rpm][10]
-* [https://rhel7.iuscommunity.org/ius-release.rpm][11]
-* [https://centos5.iuscommunity.org/ius-release.rpm][12]
-* [https://centos6.iuscommunity.org/ius-release.rpm][13]
-* [https://centos7.iuscommunity.org/ius-release.rpm][14]
+* [https://rhel6.iuscommunity.org/ius-release.rpm][IUS_RHEL6]
+* [https://rhel7.iuscommunity.org/ius-release.rpm][IUS_RHEL7]
+* [https://centos6.iuscommunity.org/ius-release.rpm][IUS_CentOS6]
+* [https://centos7.iuscommunity.org/ius-release.rpm][IUS_CentOS7]
 
-[1]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
-[2]: Usage.md
-[3]: https://github.com/iuscommunity/automation-examples
-[4]: https://setup.ius.io/
-[5]: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
-[6]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-[7]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-[8]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-[9]: https://rhel5.iuscommunity.org/ius-release.rpm
-[10]: https://rhel6.iuscommunity.org/ius-release.rpm
-[11]: https://rhel7.iuscommunity.org/ius-release.rpm
-[12]: https://centos5.iuscommunity.org/ius-release.rpm
-[13]: https://centos6.iuscommunity.org/ius-release.rpm
-[14]: https://centos7.iuscommunity.org/ius-release.rpm
+[EUA]: https://dl.iuscommunity.org/pub/ius/IUS-COMMUNITY-EUA
+[usage]: Usage.md
+[automation]: https://github.com/iuscommunity/automation-examples
+[setup]: https://setup.ius.io/
+[EPEL_docs]: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
+[EPEL6]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+[EPEL7]: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+[IUS_RHEL6]: https://rhel6.iuscommunity.org/ius-release.rpm
+[IUS_RHEL7]: https://rhel7.iuscommunity.org/ius-release.rpm
+[IUS_CentOS6]: https://centos6.iuscommunity.org/ius-release.rpm
+[IUS_CentOS7]: https://centos7.iuscommunity.org/ius-release.rpm
