@@ -190,7 +190,8 @@ correct dependencies.  You can work around this by explictly requesting a few
 more package names to help the transaction resolve successfully.
 
 * `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy}`
-* `yum install phpMyAdmin php70u-{bcmath,cli,common,process,tidy}`
+* `yum install phpMyAdmin php70u-{bcmath,cli,gd,mbstring,mysqlnd,process,tidy}`
+* `yum install phpMyAdmin php71u-{bcmath,cli,gd,mbstring,mysqlnd,process,tidy}`
 
 Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
 better dependency resolution capabilities.  That allows for a much easier
@@ -198,15 +199,19 @@ installation.
 
 * `dnf install phpMyAdmin php56u-common`
 * `dnf install phpMyAdmin php70u-common`
+* `dnf install phpMyAdmin php71u-common`
 
 #### I'm trying to install composer, but yum is failing with errors from IUS packages.  Why?
 
 See the previous question regarding phpMyAdmin.
 
-* `yum install composer php56u-{common,cli,gd,intl,mbstring,pdo,pecl-jsonc,process,xml}`
-* `yum install composer php70u-{common,gd,pdo,process}`
+* `yum install composer php56u-{cli,common,gd,intl,mbstring,pdo,pecl-jsonc,process}`
+* `yum install composer php70u-{cli,common,gd,intl,mbstring,pdo,process}`
+* `yum install composer php71u-{cli,common,gd,intl,mbstring,pdo,process}`
+
 * `dnf install composer php56u-common`
 * `dnf install composer php70u-common`
+* `dnf install composer php71u-common`
 
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
