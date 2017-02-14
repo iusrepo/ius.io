@@ -190,7 +190,7 @@ correct dependencies.  You can work around this by explictly requesting a few
 more package names to help the transaction resolve successfully.
 
 * `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
-* `yum install phpMyAdmin php71u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
+* `yum install phpMyAdmin php70u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 * `yum install phpMyAdmin php71u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 
 Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
