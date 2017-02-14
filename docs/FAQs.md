@@ -189,9 +189,9 @@ but yum's dependency resolution is not always smart enough to pull in all the
 correct dependencies.  You can work around this by explictly requesting a few
 more package names to help the transaction resolve successfully.
 
-* `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy}`
-* `yum install phpMyAdmin php70u-{bcmath,cli,gd,mbstring,mysqlnd,process,tidy}`
-* `yum install phpMyAdmin php71u-{bcmath,cli,gd,mbstring,mysqlnd,process,tidy}`
+* `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
+* `yum install phpMyAdmin php71u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
+* `yum install phpMyAdmin php71u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 
 Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
 better dependency resolution capabilities.  That allows for a much easier
