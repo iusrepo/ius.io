@@ -187,10 +187,13 @@ provides php70u, so running `yum install php70u` still works.
 IUS packages usually work just fine with noarch stock and EPEL PHP packages,
 but yum's dependency resolution is not always smart enough to pull in all the
 correct dependencies.  You can work around this by explictly requesting a few
-more package names to help the transaction resolve successfully.
+more package names to help the transaction resolve successfully.  Please note
+that not all EPEL package version will be compatible with the latest versions
+of PHP.  In particular, phpMyAdmin 4.0 from EPEL6 is not compatible with PHP 7,
+and phpMyAdmin 4.4 from EPEL7 is not compatible with PHP 7.1.
 
-* `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy}`
-* `yum install phpMyAdmin php70u-{bcmath,cli,common,process,tidy}`
+* `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
+* `yum install phpMyAdmin php70u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 
 Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
 better dependency resolution capabilities.  That allows for a much easier
@@ -203,10 +206,13 @@ installation.
 
 See the previous question regarding phpMyAdmin.
 
-* `yum install composer php56u-{common,cli,gd,intl,mbstring,pdo,pecl-jsonc,process,xml}`
-* `yum install composer php70u-{common,gd,pdo,process}`
+* `yum install composer php56u-{cli,common,gd,intl,mbstring,pdo,pecl-jsonc,process}`
+* `yum install composer php70u-{cli,common,gd,intl,mbstring,pdo,process}`
+* `yum install composer php71u-{cli,common,gd,intl,mbstring,pdo,process}`
+
 * `dnf install composer php56u-common`
 * `dnf install composer php70u-common`
+* `dnf install composer php71u-common`
 
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
