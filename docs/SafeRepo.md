@@ -4,7 +4,7 @@ Many third party repositories exist for Enterprise Linux distributions.  These
 repositories provide several different types of packages.  Not all repositories
 clearly describe the types of packages that are provided, which may lead to
 unexpected results.  The SafeRepo Initiative is a set of guidelines for third
-part repositories to follow in order to help users avoid these unexpected
+party repositories to follow in order to help users avoid these unexpected
 results.
 
 ## Terminology
@@ -24,7 +24,7 @@ When you subscribe to third party repositories, you often don't know what will
 happen.  Different third party repositories behave differently.  Some
 repositories only provide additional packages that are not in the stock
 distribution.  Other repositories contain newer versions of stock packages with
-the same name.  Many do not fully describe they types of packages they provide,
+the same name.  Many do not fully describe the types of packages they provide,
 which can lead to unexpected results for end users.
 
 **When a repository doesn't clearly describe the types of packages they
@@ -52,7 +52,7 @@ broken because PHP was also updated to a new major version during updates.
 
 ### Examples of Unsafe Repositories
 
-We are not going to explicitly call out specific projects, but their are ways
+We are not going to explicitly call out specific projects, but there are ways
 to recognize unsafe repositories.
 
 * Packages that [obsolete][2] stock packages.
