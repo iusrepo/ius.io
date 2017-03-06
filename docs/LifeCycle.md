@@ -70,7 +70,7 @@ additions.
 * 2.7 expected EOL date: [2020-07-03][19]
 * 3.0 EOL date: [2009-06-27][20]
 * 3.1 EOL date: [2012-06-27][21]
-* 3.2 expected EOL date: [2016-02-20][22]
+* 3.2 EOL date: [2016-02-20][22]
 * 3.3 expected EOL date: [2017-09-29][23]
 * 3.4 expected EOL date: [2019-03-16][pep-0429]
 * 3.5 expected EOL date: [2020-09-13][pep-0478]
