@@ -151,7 +151,7 @@ required updates to IUS php packages.
 Also, a new point release for CentOS does not happen the same day as RHEL. So
 how can we make sure that our packages will work on both Red Hat and CentOS
 during the gap between Red Hat and CentOS point releases (that requires updates
-to our packages)?  The answer we came up with to have separate repositories.
+to our packages)?  The answer we came up with was to have separate repositories.
 
 ### PHP
 
