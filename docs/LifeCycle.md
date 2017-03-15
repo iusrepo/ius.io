@@ -15,7 +15,7 @@ particular upstream version, regardless of whether that version is still
 supported by the upstream project.
 
 On the other hand, IUS packages follow their respective upstream version.  This
-is usually isoloated to a supported upstream branch (usually the major.minor
+is usually isolated to a supported upstream branch (usually the major.minor
 version).  This makes it unnecessary to backport security fixes, since the
 latest upstream version typically contains fixes for all known vulnerabilities.
 Once the upstream project declares a version end of life (EOL), IUS moves the
