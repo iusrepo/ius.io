@@ -119,7 +119,7 @@ IUS packages are free as in speech and beer.
 
 #### How can I be notified when an IUS package I am using reaches EOL (end of life) status?
 
-We post to our [public mailing list][10] when a package has reached EOL status.
+Watch our announcements repository[10], where we open a new issue when a package has reached EOL status.
 
 ### Development and Packaging Questions
 
@@ -222,7 +222,7 @@ See the previous question regarding phpMyAdmin.
 [7]: https://fedoraproject.org/wiki/Koji
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.4_Technical_Notes/RHEA-2013-0422.html
 [9]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.7_Technical_Notes/package-ImageMagick.html
-[10]: https://launchpad.net/~ius-community
+[10]: https://github.com/iuscommunity/announce
 [11]: History.md#launchpad
 
 [mod_php_decision]: https://lists.launchpad.net/ius-community/msg01277.html
