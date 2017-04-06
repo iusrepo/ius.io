@@ -34,7 +34,7 @@ If you are using CentOS, you can skip this step.  The epel-release package is
 available from the CentOS Extras repository (enabled by default) and will be
 pulled in as a dependency of ius-release automatically.
 
-RHEL users must follow the [EPEL documentation][EPEL_dcos] and use one of the
+RHEL users must follow the [EPEL documentation][EPEL_docs] and use one of the
 following links to get the correct release package.
 
 * [https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm][EPEL6]
