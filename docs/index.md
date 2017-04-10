@@ -26,8 +26,7 @@ reach us.  Our package sources can be found in the [iuscommunity-pkg][5]
 organization; issues for specific packages should be reported here.  We also
 have the [iuscommunity][6] organization for everything else, such as [the
 source for this website][7], [announcement notifications][8], and our [new
-package wishlist][9].  We can also be found in `#iuscommunity` on
-[freenode][10].
+package wishlist][9].  We can also be found in `#ius` on [freenode][10].
 
 [1]: Philosophy.md
 [2]: GettingStarted.md
