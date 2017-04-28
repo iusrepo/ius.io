@@ -42,7 +42,7 @@ following links to get the correct release package.
 
 ### ius-release
 
-IUS compiles seperate packages for RHEL and CentOS.  Use one of the following
+IUS compiles separate packages for RHEL and CentOS.  Use one of the following
 links to get the correct release package.
 
 * [https://rhel6.iuscommunity.org/ius-release.rpm][IUS_RHEL6]
