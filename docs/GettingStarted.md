@@ -13,7 +13,7 @@ specific details.
 ## Subscribing to the IUS Repository
 
 Release RPMs are the preferred method of subscribing to an RPM repository
-because they contains all the necessary configuration and key files to access
+because they contain all the necessary configuration and key files to access
 the repository.
 
 To subscribe a system to the IUS repository, you need to install the
