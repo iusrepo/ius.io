@@ -83,6 +83,15 @@ yum install yum-plugin-replace
 yum replace php --replace-with php56u
 ```
 
+In EL7, there are a few more options that are available.  Yum got an update to
+include the swap subcommand.
+
+[asciinema demo][asciinema yum swap]
+
+```bash
+yum swap dovecot dovecot22u
+```
+
 There is another option in the new [dnf][11] package manager.  The flag
 [`--allowerasing`][12] allows you erase conflicting packages in the same
 transaction.
@@ -137,6 +146,7 @@ yum --enablerepo=ius-testing install php56u-pecl-uploadprogress
 [8]: https://asciinema.org/a/24507
 [9]: https://github.com/iuscommunity/yum-plugin-replace
 [10]: https://asciinema.org/a/24503
+[asciinema yum swap]: https://asciinema.org/a/121792
 [11]: https://dnf.readthedocs.org
 [12]: https://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
 [13]: https://asciinema.org/a/24559
