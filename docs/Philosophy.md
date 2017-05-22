@@ -93,7 +93,7 @@ again.
 [4]: SafeRepo.md#parallel-installable-package
 [5]: https://dl.iuscommunity.org/pub/ius/testing/
 [6]: https://dl.iuscommunity.org/pub/ius/stable/
-[7]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html-single/5.6_Release_Notes/#idp12335856
+[7]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/5.6_Release_Notes/ar01s04.html
 [8]: https://lists.launchpad.net/ius-community/msg00145.html
 [9]: https://lists.launchpad.net/ius-community/msg00151.html
 [10]: https://bugs.launchpad.net/ius/+bug/691755
