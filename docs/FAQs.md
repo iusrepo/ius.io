@@ -195,9 +195,8 @@ and phpMyAdmin 4.4 from EPEL7 is not compatible with PHP 7.1.
 * `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 * `yum install phpMyAdmin php70u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 
-Alternatively, you can use dnf on EL7 via [COPR][dnf_copr], which has much
-better dependency resolution capabilities.  That allows for a much easier
-installation.
+Alternatively, you can use dnf from EPEL 7, which has much better dependency
+resolution capabilities.  That allows for a much easier installation.
 
 * `dnf install phpMyAdmin php56u-common`
 * `dnf install phpMyAdmin php70u-common`
@@ -226,4 +225,3 @@ See the previous question regarding phpMyAdmin.
 [11]: History.md#launchpad
 
 [mod_php_decision]: https://lists.launchpad.net/ius-community/msg01277.html
-[dnf_copr]: https://copr.fedorainfracloud.org/coprs/g/rpm-software-management/dnf-stack-el7/
