@@ -119,7 +119,7 @@ IUS packages are free as in speech and beer.
 
 #### How can I be notified when an IUS package I am using reaches EOL (end of life) status?
 
-Watch our announcements repository[10], where we open a new issue when a package has reached EOL status.
+Watch our [announcements repository][10], where we open a new issue when a package has reached EOL status.
 
 ### Development and Packaging Questions
 
