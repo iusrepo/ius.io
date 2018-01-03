@@ -81,8 +81,8 @@ additions.
 * [Downloads][redis-downloads]
 * 2.6 EOL date: [2015-04-01][redis-3.0.0] (3.0.0 release date)
 * 2.8 EOL date: [2016-05-06][redis-3.2.0] (3.2.0 release date)
-* 3.0 expected EOL date: TBD (3.4.0 release date)
-* 3.2 expected EOL date: TBD (3.6.0 release date)
+* 3.0 EOL date: [2017-07-14][redis-4.0.0] (4.0.0 release date)
+* 4.0 expected EOL date: TBD (4.2.0 release date)
 
 ### HAProxy
 
@@ -119,6 +119,7 @@ additions.
 [redis-downloads]: http://redis.io/download
 [redis-3.0.0]: https://github.com/antirez/redis/blob/3.0.0/00-RELEASENOTES#L15
 [redis-3.2.0]: https://github.com/antirez/redis/blob/3.2.0/00-RELEASENOTES#L14
+[redis-4.0.0]: https://github.com/antirez/redis/blob/4.0.0/00-RELEASENOTES#L14
 [haproxy-description]: http://www.haproxy.org/#desc
 [php-5.5-eol]: http://php.net/archive/2016.php#id2016-07-21-2
 [current]: https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates
