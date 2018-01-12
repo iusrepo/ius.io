@@ -102,7 +102,7 @@ additions.
 [11]: https://en.wikipedia.org/wiki/MySQL#Versions
 [14]: http://dev.mysql.com/doc/relnotes/mysql/5.5/en/
 [15]: http://dev.mysql.com/doc/relnotes/mysql/5.6/en/
-[16]: https://mariadb.com/kb/en/mariadb/mariadb-maintenance-policy/
+[16]: https://mariadb.org/about/maintenance-policy/
 [17]: https://docs.python.org/devguide/devcycle.html
 [18]: https://www.python.org/download/releases/2.6.9/
 [19]: https://www.python.org/dev/peps/pep-0373/
