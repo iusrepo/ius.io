@@ -45,9 +45,8 @@ package can interact with our msyql-server packages.
 
 #### Can IUS be used with DNF?
 
-EPEL did contain DNF packages for EL 7, but they have been [removed][dnf
-remove]. Previous installed DNF packages may continue to work, but will no
-longer receive any updates.  For most use cases, yum is recommended.
+EPEL did contain DNF packages for EL 7, but they have been moved to a [CentOS
+SIG][dnf sig].  Note, DNF is also referred to as YUM 4.
 
 #### What happened to LaunchPad?
 
@@ -197,6 +196,13 @@ and phpMyAdmin 4.4 from EPEL7 is not compatible with PHP 7.1.
 * `yum install phpMyAdmin php56u-{bcmath,cli,common,gd,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 * `yum install phpMyAdmin php70u-{bcmath,cli,common,gd,json,mbstring,mcrypt,mysqlnd,process,tidy,xml}`
 
+Alternatively, you can use dnf which has much better dependency resolution
+capabilities, and allows for a much easier installation.  See [this FAQ][dnf
+faq] for more information.
+
+* `dnf install phpMyAdmin php56u-common`
+* `dnf install phpMyAdmin php70u-common`
+
 #### I'm trying to install composer, but yum is failing with errors from IUS packages.  Why?
 
 See the previous question regarding phpMyAdmin.
@@ -204,6 +210,10 @@ See the previous question regarding phpMyAdmin.
 * `yum install composer php56u-{cli,common,gd,intl,mbstring,pdo,pecl-jsonc,process}`
 * `yum install composer php70u-{cli,common,gd,intl,mbstring,pdo,process}`
 * `yum install composer php71u-{cli,common,gd,intl,mbstring,pdo,process}`
+
+* `dnf install composer php56u-common`
+* `dnf install composer php70u-common`
+* `dnf install composer php71u-common`
 
 [2]: Philosophy.md#naming-convention
 [3]: https://access.redhat.com/security/updates/backporting/?sc_cid=3093
@@ -214,6 +224,8 @@ See the previous question regarding phpMyAdmin.
 [8]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.4_Technical_Notes/RHEA-2013-0422.html
 [9]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/6.7_Technical_Notes/package-ImageMagick.html
 [10]: https://github.com/iuscommunity/announce
-[dnf remove]: https://src.fedoraproject.org/rpms/dnf/c/8f3b331701bcaf73620b1527c8a16be9a7e27596?branch=epel7
+[dnf sig]: https://seven.centos.org/2017/10/yum-4-is-available-for-testing/
 [11]: History.md#launchpad
+
 [mod_php_decision]: https://lists.launchpad.net/ius-community/msg01277.html
+[dnf faq]: FAQs.md#can-ius-be-used-with-dnf

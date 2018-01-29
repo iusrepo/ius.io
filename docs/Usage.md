@@ -92,6 +92,19 @@ include the swap subcommand.
 yum swap dovecot dovecot22u
 ```
 
+There is another option in the new [DNF][11] package manager.  The flag
+[`--allowerasing`][12] allows you erase conflicting packages in the same
+transaction.
+
+_Note: DNF is not yet available in base RHEL. See [this FAQ][dnf faq] for more
+infomration._
+
+[asciinema demo][13]
+
+```bash
+dnf --allowerasing install git2u
+```
+
 ### Parallel Installable Packages
 
 [Parallel packages][3] are specifically designed to coexist with their stock
@@ -135,6 +148,10 @@ yum --enablerepo=ius-testing install php56u-pecl-uploadprogress
 [9]: https://github.com/iuscommunity/yum-plugin-replace
 [10]: https://asciinema.org/a/24503
 [asciinema yum swap]: https://asciinema.org/a/121792
+[11]: https://dnf.readthedocs.org
+[12]: https://dnf.readthedocs.org/en/latest/cli_vs_yum.html#packages-replacement-without-yum-shell-or-yum-swap
+[13]: https://asciinema.org/a/24559
 [14]: https://asciinema.org/a/24505
 [15]: https://asciinema.org/a/a1dznemtxfczm4t8309i9kgi4
+[dnf faq]: FAQs.md#can-ius-be-used-with-dnf
 
