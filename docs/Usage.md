@@ -97,7 +97,7 @@ There is another option in the new [DNF][11] package manager.  The flag
 transaction.
 
 _Note: DNF is not yet available in base RHEL. See [this FAQ][dnf faq] for more
-infomration._
+information._
 
 [asciinema demo][13]
 
