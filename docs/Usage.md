@@ -92,11 +92,12 @@ include the swap subcommand.
 yum swap dovecot dovecot22u
 ```
 
-There is another option in the new [dnf][11] package manager.  The flag
+There is another option in the new [DNF][11] package manager.  The flag
 [`--allowerasing`][12] allows you erase conflicting packages in the same
 transaction.
 
-_Note: Dnf is not yet available in base RHEL, but has been backported to EPEL 7._
+_Note: DNF is not yet available in base RHEL. See [this FAQ][dnf faq] for more
+information._
 
 [asciinema demo][13]
 
@@ -152,4 +153,5 @@ yum --enablerepo=ius-testing install php56u-pecl-uploadprogress
 [13]: https://asciinema.org/a/24559
 [14]: https://asciinema.org/a/24505
 [15]: https://asciinema.org/a/a1dznemtxfczm4t8309i9kgi4
+[dnf faq]: FAQs.md#can-ius-be-used-with-dnf
 
