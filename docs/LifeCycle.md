@@ -5,7 +5,7 @@
 IUS only builds packages for [current versions][current] of Red Hat Enterprise
 Linux and CentOS.  This does not include [extended life cycle
 options][extended] from Red Hat.  New package requests will no longer be
-accepted once Production 3 Phase starts.
+accepted once [Maintenance Support 2 Phase][maintenance2] starts.
 
 ## Package Life Cycle
 
@@ -124,3 +124,4 @@ additions.
 [php-5.5-eol]: http://php.net/archive/2016.php#id2016-07-21-2
 [current]: https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates
 [extended]: https://access.redhat.com/support/policy/updates/errata/#Extended_Life_Cycle_Phase
+[maintenance2]: https://access.redhat.com/support/policy/updates/errata/#Maintenance_Support_2_Phase
