@@ -15,11 +15,11 @@ Rather than maintain a list of available packages by hand, we use the fantastic
 * [CentOS 7 x86_64][CentOS7_x86_64]
 
 [repoview]: https://fedorahosted.org/repoview/
-[RHEL6_SRPMS]: https://dl.iuscommunity.org/pub/ius/stable/RedHat/6/SRPMS/repoview/
-[RHEL6_i386]: https://dl.iuscommunity.org/pub/ius/stable/RedHat/6/i386/repoview/
-[RHEL6_x86_64]: https://dl.iuscommunity.org/pub/ius/stable/RedHat/6/x86_64/repoview/
-[RHEL7_SRPMS]: https://dl.iuscommunity.org/pub/ius/stable/RedHat/7/SRPMS/repoview/
-[RHEL7_x86_64]: https://dl.iuscommunity.org/pub/ius/stable/RedHat/7/x86_64/repoview/
+[RHEL6_SRPMS]: https://dl.iuscommunity.org/pub/ius/stable/Redhat/6/SRPMS/repoview/
+[RHEL6_i386]: https://dl.iuscommunity.org/pub/ius/stable/Redhat/6/i386/repoview/
+[RHEL6_x86_64]: https://dl.iuscommunity.org/pub/ius/stable/Redhat/6/x86_64/repoview/
+[RHEL7_SRPMS]: https://dl.iuscommunity.org/pub/ius/stable/Redhat/7/SRPMS/repoview/
+[RHEL7_x86_64]: https://dl.iuscommunity.org/pub/ius/stable/Redhat/7/x86_64/repoview/
 [CentOS6_SRPMS]: https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/SRPMS/repoview/
 [CentOS6_i386]: https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/i386/repoview/
 [CentOS6_x86_64]: https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/repoview/
